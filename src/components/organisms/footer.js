@@ -38,14 +38,14 @@ function Footer() {
             </h3>
             <ul className="p-1 font-serif text-sm">
               <li className="p-1">
-                Tel:
+                Tel:&nbsp;
                 <span className="text-base text-white">
                   (+254) 790 554 779 -{" "}
                 </span>
                 Reception
               </li>
               <li className="p-1">
-                Tel:
+                Tel:&nbsp;
                 <span className="text-base text-white">
                   (+254) 792 600 900 -{" "}
                 </span>
@@ -54,12 +54,11 @@ function Footer() {
               <li className="p-1">
                 Email:
                 <span className="text-base text-white">
-                  info@dragonflyafrica.co.ke -{" "}
+                  &nbsp;info@dragonflyafrica.co.ke
                 </span>
-                Operations
               </li>
               <li className="p-1">
-                P.O. BOX:
+                P.O. BOX.&nbsp;
                 <span className="text-base text-white">3542-00506 </span>Nairobi
                 Kenya
               </li>
