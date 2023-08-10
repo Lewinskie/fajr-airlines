@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Memberships({ memberships }) {
   return (
-    <section>
+    <section style={{ marginBottom: "0px", paddingBottom: "0px" }}>
       <div className="my-2 flex flex-row items-center justify-start  gap-4 ">
         <div className=" h-1 w-10 rounded bg-red-500"></div>
         <h4 className="  uppercase text-2xl font-bold">
