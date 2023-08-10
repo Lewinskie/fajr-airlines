@@ -1,6 +1,6 @@
-import Image from "next/image";
-import CoreValuesImage from "../../../../public/coreValues.jpg";
-import { Card, CardHeader, CardMedia, Container, Grid } from "@mui/material";
+// import Image from "next/image";
+// import CoreValuesImage from "../../../../public/coreValues.jpg";
+import { Card, Container, Grid } from "@mui/material";
 
 function CoreValues({ core_values }) {
   return (
