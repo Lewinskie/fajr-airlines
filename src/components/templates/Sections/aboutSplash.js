@@ -2,9 +2,11 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import AboutImage from "../../../../public/FAH_1364 copy.jpg";
+// import
 
-function AboutSplash({ teamlist }) {
+function AboutSplash({ teamlist, about_us }) {
   const team = teamlist;
+  const { paragraphs } = about_us;
   return (
     <>
       <div className="relative h-[80vw] md:h-[34vw]">
@@ -38,6 +40,38 @@ function AboutSplash({ teamlist }) {
         </div>
       </div>
       <div className="max-w-7xl mx-auto">
+        {/* About us message section */}
+        <div
+          style={{ marginTop: "4rem", display: "flex", alignItems: "center" }}
+        >
+          <div
+            className=" h-1 w-10 rounded bg-red-500"
+            style={{ marginRight: "1rem" }}
+          ></div>
+          <h4 className=" uppercase text-2xl font-bold">Who are we?</h4>
+        </div>
+
+        <div className="my-10 flex flex-row items-center justify-start  gap-4 ">
+          {paragraphs.map((paragraph, index) => (
+            <div key={index}>
+              <p
+                className="leading-relaxed text-base font-serif"
+                style={{ marginBottom: "1rem" }}
+              >
+                {paragraph.p1}
+              </p>
+              <p
+                className="leading-relaxed text-base font-serif"
+                style={{ marginBottom: "1rem" }}
+              >
+                {paragraph.p2}
+              </p>
+              <p className="leading-relaxed text-base font-serif">
+                {paragraph.p3}
+              </p>
+            </div>
+          ))}
+        </div>
         {/* Our Vision and Mission Sections */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-20">
           <div>

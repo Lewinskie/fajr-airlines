@@ -236,7 +236,7 @@ export const team = {
   staff: [
     {
       id: 1,
-      title: "Accounts Manager",
+      title: "Accountable Manager",
       name: "Winnie Nafula",
       image_url: WinnieN,
       paragraphs: [
@@ -301,7 +301,7 @@ export const team = {
     {
       id: 5,
       title: "Chief Pilot",
-      name: "Mahat Omar Somo",
+      name: "Captain Mahat Omar Somo",
       image_url: Mahat,
       paragraphs: [
         {
