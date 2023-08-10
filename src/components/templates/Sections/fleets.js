@@ -17,7 +17,7 @@ function Fleets({}) {
           className=" brightness-50 object-cover"
         />
         <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
-        <div className="absolute bottom-0 left-0 mb-8 ml-8 w-full">
+        <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl text-neutral-500">Our Fleet</h1>
           </div>
