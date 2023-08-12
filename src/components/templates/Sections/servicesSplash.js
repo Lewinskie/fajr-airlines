@@ -15,7 +15,7 @@ function ServicesSplash({}) {
         className="-z-10 brightness-50 object-none"
       />
       <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
-      <div className="absolute bottom-0 left-0 mb-8 ml-8 w-full">
+      <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl text-neutral-500">Our Services</h1>
           {/* <p className="text-base text-white font-serif mt-2 w-1/2">
