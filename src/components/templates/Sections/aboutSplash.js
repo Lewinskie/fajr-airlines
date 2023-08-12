@@ -21,7 +21,7 @@ function AboutSplash({ teamlist, about_us }) {
           className="-z-10 brightness-50 object-none"
         />
         <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
-        <div className="absolute bottom-0 left-0 mb-8 ml-8 w-full">
+        <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl text-neutral-500">About Us</h1>
             {/* <p className="text-base text-white font-serif mt-2 w-1/2">
@@ -102,7 +102,10 @@ function AboutSplash({ teamlist, about_us }) {
                 key={member.id}
                 className="bg-white rounded-lg shadow-2xl-primary"
               >
-                <div className="relative  overflow-hidden rounded-t-lg">
+                <div
+                  className="relative  overflow-hidden rounded-t-lg"
+                  style={{ height: "400px" }}
+                >
                   <Image
                     src={member.image_url}
                     alt={member.name}
