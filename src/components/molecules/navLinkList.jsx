@@ -10,10 +10,10 @@ function NavLinkList({ sticky }) {
     <div className="px-5">
       <ul className="hidden gap-6 md:flex md:flex-row ">
         {NavTitles &&
-          NavTitles.map((NavTitle, i) => {
+          NavTitles.map((NavTitle) => {
             return (
+              <div key={NavTitle.id} className="menu-item">
               <Link
-                key={i}
                 href={NavTitle.href}
                 className={`${
                   router.asPath == NavTitle.href
@@ -29,6 +29,18 @@ function NavLinkList({ sticky }) {
               >
                 {NavTitle.name}
               </Link>
+              <ul className="dropdown-menu">
+                {console.log({subMenu: NavTitle.sub_menu})}
+                {NavTitle?.sub_menu && NavTitle.sub_menu.length > 0 && NavTitle.sub_menu.map(item => (
+                  <li key={item.id}>
+                    <Link href="/" >
+                      {item.sub_name}
+                    </Link>
+                </li>
+                ))}
+                
+              </ul>
+              </div>
             );
           })}
       </ul>
