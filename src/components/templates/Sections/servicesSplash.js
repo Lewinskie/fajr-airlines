@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ServicesSplashImage from "../../../../public/hero2.jpg";
+import ServicesSplashImage from "../../../../public/hero2.webp";
 
 function ServicesSplash({}) {
   return (

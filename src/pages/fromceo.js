@@ -1,7 +1,14 @@
 import React from "react";
+import CeoSplash from "@/components/templates/Sections/ceoSplash";
+import { ceo_message } from "@/data";
 
 const fromceo = () => {
-  return <div className="max-w-7xl mx-auto bg-gray-100">fromceo</div>;
+  const message = { ceo_message };
+  return (
+    <>
+      <CeoSplash message={message} />
+    </>
+  );
 };
 
 export default fromceo;
