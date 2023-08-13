@@ -35,18 +35,29 @@ export const NavTitles = [
     id: 3,
     name: "Services",
     href: "/services",
+<<<<<<< HEAD
     // sub_menu: [
     //   { id: 1, sub_name: "Chatter Passnger", href: "/chatter" },
     //   { id: 2, sub_name: "Humanitarian Services", href: "/humanitarian" },
     // ],
+=======
+    sub_menu: [
+      { id: 31, sub_name: "Chatter Passnger", href: "/chatter" },
+      { id: 32, sub_name: "Humanitarian Services", href: "/humanitarian" },
+    ],
+>>>>>>> 5d0b71a163bdf87111ed0823a9672b37bbd9ffb2
   },
   {
-    id: 3,
+    id: 4,
     name: "Our Fleet",
     href: "/fleet",
+<<<<<<< HEAD
     // sub_menu: [{ id: 1, sub_name: "Fokker 50 Series", href: "/fokker50" }],
+=======
+    sub_menu: [{ id: 41, sub_name: "Fokker 50 Series", href: "/fokker50" }],
+>>>>>>> 5d0b71a163bdf87111ed0823a9672b37bbd9ffb2
   },
-  { id: 6, name: "Contact Us", href: "contacts" },
+  { id: 5, name: "Contact Us", href: "contacts" },
 ];
 
 export const ceo_message = {
