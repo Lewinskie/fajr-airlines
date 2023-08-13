@@ -10,25 +10,34 @@ function NavLinkList({ sticky }) {
     <div className="px-5">
       <ul className="hidden gap-6 md:flex md:flex-row ">
         {NavTitles &&
-          NavTitles.map((NavTitle, i) => {
+          NavTitles.map((NavTitle) => {
             return (
-              <Link
-                key={i}
-                href={NavTitle.href}
-                className={`${
-                  router.asPath == NavTitle.href
-                    ? `${
-                        sticky
-                          ? "border-b-4 border-secondary-500 text-primary"
-                          : "text-primary-500 border-b-4 border-secondary-500"
-                      }`
-                    : sticky
-                    ? "text-gray-500"
-                    : "text-white-500"
-                } text-base font-sans hover:border-b-4 hover:border-secondary-500 hover:text-primary-500 `}
-              >
-                {NavTitle.name}
-              </Link>
+              <div key={NavTitle.id} className="menu-item">
+                <Link
+                  href={NavTitle.href}
+                  className={`${
+                    router.asPath == NavTitle.href
+                      ? `${sticky ? "text-primary " : "text-primary-500"}`
+                      : sticky
+                      ? "text-gray-500"
+                      : "text-white-500"
+                  } text-base font-sans hover:text-secondary-500`}
+                >
+                  {NavTitle.name}
+                </Link>
+                {NavTitle?.sub_menu && NavTitle.sub_menu.length > 0 && (
+                  <ul className="dropdown-menu pt-3">
+                    {console.log({ subMenu: NavTitle.sub_menu })}
+                    {NavTitle?.sub_menu &&
+                      NavTitle.sub_menu.length > 0 &&
+                      NavTitle.sub_menu.map((item) => (
+                        <li key={item.id} className="dropdown-menu-item">
+                          <Link href="/fromceo">{item.sub_name}</Link>
+                        </li>
+                      ))}
+                  </ul>
+                )}
+              </div>
             );
           })}
       </ul>
