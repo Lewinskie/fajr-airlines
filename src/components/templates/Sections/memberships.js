@@ -20,9 +20,9 @@ function Memberships({ memberships }) {
                 <Image
                   src={member.logo_url}
                   alt="Image"
-                  width={100}
-                  height={100}
-                  className="h-20"
+                  width={190}
+                  // height={100}
+                  className="h-40"
                 />
                 <div className="flex flex-col items-center  py-8">
                   <h4 className=" pt-2 text-center font-sans text-xl font-bold uppercase text-red-500">
