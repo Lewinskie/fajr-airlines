@@ -25,23 +25,28 @@ import Mulki from "../../public/Mulki.jpg";
 
 export const NavTitles = [
   { id: 1, name: "Home", href: "/" },
-  { id: 2, name: "About Us", href: "/about" },
+  {
+    id: 2,
+    name: "About Us",
+    href: "/about",
+    sub_menu: [{ id: 1, sub_name: "CEO's Message", href: "/fromceo" }],
+  },
   {
     id: 3,
     name: "Services",
     href: "/services",
-    sub_menu: [
-      { id: 1, sub_name: "Chatter Passnger", href: "/chatter" },
-      { id: 2, sub_name: "Humanitarian Services", href: "/humanitarian" },
-    ],
+    // sub_menu: [
+    //   { id: 1, sub_name: "Chatter Passnger", href: "/chatter" },
+    //   { id: 2, sub_name: "Humanitarian Services", href: "/humanitarian" },
+    // ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Our Fleet",
     href: "/fleet",
-    sub_menu: [{ id: 1, sub_name: "Fokker 50 Series", href: "/fokker50" }],
+    // sub_menu: [{ id: 1, sub_name: "Fokker 50 Series", href: "/fokker50" }],
   },
-  { id: 6, name: "Contact Us", href: "contacts" },
+  { id: 5, name: "Contact Us", href: "contacts" },
 ];
 
 export const ceo_message = {

@@ -4,6 +4,7 @@ const nextConfig = {
   // distDir: "dist",
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     domains: [
       // "http://aviationkenya.org",
       // "https://www.afraa.org",
