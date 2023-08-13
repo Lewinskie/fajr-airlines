@@ -58,7 +58,7 @@ export const ceo_message = {
       p3: "We aim to become a world class aviation company focused on maintaining high standards of safety as well as offering superior customer service. We truly hope as always that you enjoy a wonderful flight experience with us and thank you for choosing Dragonfly Aviation Limited.",
     },
   ],
-  ceo_name: "Patricia Matu- Chief Executive Officer",
+  ceo_name: "Patricia Matu",
 };
 
 export const about_us = {
