@@ -1,5 +1,5 @@
 import hero1 from "../../public/plane11.jpg";
-import hero2 from "../../public/FAH_1364 copy.jpg";
+import hero2 from "../../public/FAH_1364 copy.webp";
 import hero3 from "../../public/inside-plane.jpg";
 import Nairobi from "../../public/nairobi.jpg";
 import Mogadishu from "../../public//mogadishu.jpg";
@@ -10,18 +10,18 @@ import kaoo from "../../public/kaoo.jpg";
 import kata from "../../public/kata.png";
 
 // Team
-import WinnieN from "../../public/WINNIE NAFULA-PHOTO.jpg";
-import Dannie from "../../public/Dannie.jpg";
-import Hamdi from "../../public/Hamdi.jpg";
-import Margaret from "../../public/Margaret.jpg";
-import Mahat from "../../public/Mahat.jpg";
-import Fundi from "../../public/Fundi.jpg";
-import Winfred from "../../public/Winfred.jpg";
-import Samuel from "../../public/Samuel.jpg";
-import Gulraiz from "../../public/Gulraiz.jpg";
-import Antony from "../../public/Antony.jpg";
-import yasmin from "../../public/yasmin.jpg";
-import Mulki from "../../public/Mulki.jpg";
+import WinnieN from "../../public/WINNIE NAFULA-PHOTO.webp";
+import Dannie from "../../public/Dannie.webp";
+import Hamdi from "../../public/Hamdi.webp";
+import Margaret from "../../public/Margaret.webp";
+import Mahat from "../../public/Mahat.webp";
+import Fundi from "../../public/Fundi.webp";
+import Winfred from "../../public/Winfred.webp";
+import Samuel from "../../public/Samuel.webp";
+import Gulraiz from "../../public/Gulraiz.webp";
+import Antony from "../../public/Antony.webp";
+import yasmin from "../../public/yasmin.webp";
+import Mulki from "../../public/Mulki.webp";
 
 export const NavTitles = [
   { id: 1, name: "Home", href: "/" },

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React, { useState } from "react";
-import AboutImage from "../../../../public/FAH_1364 copy.jpg";
+import AboutImage from "../../../../public/FAH_1364 copy.webp";
 // import
 
 function AboutSplash({ teamlist, about_us }) {
@@ -104,7 +104,7 @@ function AboutSplash({ teamlist, about_us }) {
               >
                 <div
                   className="relative  overflow-hidden rounded-t-lg"
-                  style={{ height: "400px" }}
+                  style={{ height: "380px" }}
                 >
                   <Image
                     src={member.image_url}

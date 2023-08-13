@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Charter from "../../../../public/FAH_1364 copy.jpg";
+import Charter from "../../../../public/FAH_1364 copy.webp";
 import Humanitarian from "../../../../public/plane11.jpg";
 
 function ServiceBrief({}) {

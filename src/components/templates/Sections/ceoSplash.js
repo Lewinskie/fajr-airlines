@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
-import AboutImage from "../../../../public/FAH_1364 copy.jpg";
+import AboutImage from "../../../../public/FAH_1364 copy.webp";
 import { Container } from "@mui/material";
 // import
 
