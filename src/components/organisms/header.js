@@ -17,6 +17,9 @@ function Header() {
   const handleMenu = () => {
     setOpen(!open);
   };
+  const handleCloseMenu = () => {
+    setOpen(false);
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -50,11 +53,17 @@ function Header() {
               )}
             </div>
             <div
-              className={`absolute  top-0 ${
-                open ? "right-0 z-20" : "right-[-100%] "
-              } h-screen w-2/3 bg-white px-4 py-2 text-blue-900 md:hidden `}
+              // className={`absolute  top-0 ${
+              //   open ? "right-0 z-20" : "right-[-100%] "
+              // } h-screen w-2/3 bg-white px-4 py-2 text-blue-900 md:hidden `}
+
+              className={`fixed top-0 right-0 z-40 h-full w-full bg-white px-4 py-2 text-blue-900 md:hidden ${
+                open ? "" : "hidden"
+              } transition-opacity duration-300 ${
+                open ? "opacity-100" : "opacity-0 pointer-events-none"
+              }`}
             >
-              <SideNavLinkList sticky={sticky} />
+              <SideNavLinkList sticky={sticky} onClosemenu={handleCloseMenu} />
             </div>
           </div>
         </nav>

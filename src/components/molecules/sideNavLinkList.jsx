@@ -3,8 +3,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { NavTitles } from "../../data";
 
-function SideNavLinkList({ sticky }) {
+function SideNavLinkList({ sticky, onClosemenu }) {
   const router = useRouter();
+  const handleLinkClick = () => {
+    onClosemenu();
+  };
   return (
     <div className="flex flex-col ">
       <div>
@@ -18,6 +21,7 @@ function SideNavLinkList({ sticky }) {
                   ? " px-8 text-accent"
                   : "px-4 text-primary hover:text-accent"
               }`}
+              onClick={handleLinkClick}
             >
               {menu?.name}
             </Link>
