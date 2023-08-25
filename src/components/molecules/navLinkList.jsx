@@ -6,6 +6,7 @@ import { NavTitles } from "../../data";
 
 function NavLinkList({ sticky }) {
   const router = useRouter();
+
   return (
     <div className="px-5">
       <ul className="hidden gap-6 md:flex md:flex-row ">
