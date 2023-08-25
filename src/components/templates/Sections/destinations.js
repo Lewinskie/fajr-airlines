@@ -29,7 +29,7 @@ function Destinations({ destinations }) {
                 href="#"
                 intent="primary"
                 size="medium"
-                // className="inline-block mt-4 px-4 py-2 bg-secondary-500 text-white rounded-lg"
+                className="inline-block mt-4 px-4 py-2  text-white rounded-lg"
               >
                 Learn more
               </Button>
