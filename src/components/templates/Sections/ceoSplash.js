@@ -21,23 +21,28 @@ function CeoSplash({ message }) {
         />
         <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
         <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
-          <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl text-neutral-500">CEO's Message</h1>
-          </div>
+          <Container>
+            <div className="max-w-7xl mx-auto">
+              <h1 className="text-3xl text-neutral-500">CEO's Message</h1>
+            </div>
+          </Container>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto">
-        {/* About us message section */}
-        <div
-          style={{ marginTop: "6rem", display: "flex", alignItems: "center" }}
-        >
+      <Container>
+        <div className="max-w-7xl mx-auto">
+          {/* About us message section */}
           <div
-            className=" h-1 w-10 rounded bg-red-500"
-            style={{ marginRight: "1rem" }}
-          ></div>
-          <h4 className=" uppercase text-2xl font-bold">{ceo_message.title}</h4>
-        </div>
-        <Container>
+            style={{ marginTop: "6rem", display: "flex", alignItems: "center" }}
+          >
+            <div
+              className=" h-1 w-10 rounded bg-red-500"
+              style={{ marginRight: "1rem" }}
+            ></div>
+            <h4 className=" uppercase text-2xl font-bold">
+              {ceo_message.title}
+            </h4>
+          </div>
+
           <div className="my-20 flex flex-row items-center justify-start  gap-4">
             {ceo_message.paragraphs.map((paragraph, index) => (
               <div key={index}>
@@ -67,8 +72,8 @@ function CeoSplash({ message }) {
               Chief Executive Director
             </p>
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </>
   );
 }

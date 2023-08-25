@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ServicesSplashImage from "../../../../public/hero2.webp";
+import { Container } from "@mui/material";
 
 function ServicesSplash({}) {
   return (
@@ -16,9 +17,10 @@ function ServicesSplash({}) {
       />
       <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
       <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl text-neutral-500">Our Services</h1>
-          {/* <p className="text-base text-white font-serif mt-2 w-1/2">
+        <Container>
+          <div className="max-w-7xl mx-auto">
+            <h1 className="text-3xl text-neutral-500">Our Services</h1>
+            {/* <p className="text-base text-white font-serif mt-2 w-1/2">
             We have a highly experienced management team with the expertise and
             industry knowledge to deliver our services to diverse clients. Our
             employees are the heart of our company, and we value their ongoing
@@ -30,7 +32,8 @@ function ServicesSplash({}) {
             Other managers are Cabin Crew Manager, Security Manager and
             Operations Manager.
           </p> */}
-        </div>
+          </div>
+        </Container>
       </div>
     </div>
   );
