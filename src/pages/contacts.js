@@ -26,7 +26,9 @@ const Contacts = () => {
         </div>
       </div>
       <Maps />
-      <div style={{ background: "#E6E8F8" }}>
+      <div
+      // style={{ background: "#E6E8F8" }}
+      >
         <Container>
           <div className="max-w-7xl mx-auto flex flex-col pb-20">
             {/* <div>
