@@ -8,7 +8,7 @@ import ContactForm from "@/components/molecules/contact-form";
 const Contacts = () => {
   return (
     <>
-      <div className="relative h-[80vw] md:h-[34vw]">
+      {/* <div className="relative h-[80vw] md:h-[34vw]">
         <Image
           src={ContactImage}
           alt="alt text"
@@ -24,18 +24,11 @@ const Contacts = () => {
             </div>
           </Container>
         </div>
-      </div>
+      </div> */}
       <Maps />
-      <div
-      // style={{ background: "#E6E8F8" }}
-      >
+      <div>
         <Container>
           <div className="max-w-7xl mx-auto flex flex-col pb-20">
-            {/* <div>
-              <p className="leading-relaxed font-serif mt-10 text-center text-xl mb-10 ">
-                We are always glad to hear from you
-              </p>
-            </div> */}
             <div
               style={{
                 marginTop: "4rem",
