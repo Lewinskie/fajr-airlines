@@ -28,7 +28,6 @@ function NavLinkList({ sticky }) {
                 </Link>
                 {NavTitle?.sub_menu && NavTitle.sub_menu.length > 0 && (
                   <ul className="dropdown-menu pt-3">
-                    {console.log({ subMenu: NavTitle.sub_menu })}
                     {NavTitle?.sub_menu &&
                       NavTitle.sub_menu.length > 0 &&
                       NavTitle.sub_menu.map((item) => (

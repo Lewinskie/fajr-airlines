@@ -8,7 +8,7 @@ import { Container, Grid } from "@mui/material";
 function Footer() {
   // const [isLoading, setLoading] = useState(true);
   return (
-    <div className=" bg-primary-500 ">
+    <div className=" bg-primary-500 pt-4 pb-2">
       <footer className="mx-auto max-w-7xl text-base font-sans tracking-wide  text-white">
         {/* <div className="grid grid-cols-5 items-start justify-between py-10">
           <div className="col-start-1 col-end-3 p-3">
