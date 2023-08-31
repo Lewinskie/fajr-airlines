@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage, useFormikContext } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { Button } from "../cva/buttonCVA";
+import { Card } from "@mui/material";
 
 const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState("");
@@ -36,7 +37,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="border border-gray-400 px-12 py-20 max-w-3xl self-center">
+    <Card className="border border-primary-500 px-12 py-20 max-w-3xl self-center">
       {/* <h4 className="text-primary-450 text-center leading-relaxed font-serif text-lg">
         We are here to help and answer any queries you might have. We look
         forward to hear from you
@@ -51,7 +52,7 @@ const ContactForm = () => {
             <div className="flex items-center mb-4">
               <div className="w-full mr-3">
                 <label
-                  class=" text-gray-500 text-base font-bold mb-2"
+                  class=" text-primary-500 text-base font-bold mb-2"
                   for="firstName"
                 >
                   First Name
@@ -61,15 +62,15 @@ const ContactForm = () => {
                   className={`appearance-none bg-transparent border  ${
                     touched.firstName && errors.firstName
                       ? "border-red-500"
-                      : "border-gray-600"
-                  } w-full text-gray-500 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
+                      : "border-primary-500"
+                  } w-full text-gray-600 capitalize py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="text"
                   placeholder="John"
                 />
               </div>
               <div className="w-full">
                 <label
-                  class=" text-primary-400 text-base font-bold mb-2"
+                  class=" text-primary-500 text-base font-bold mb-2"
                   for="lastName"
                 >
                   Last Name
@@ -79,8 +80,8 @@ const ContactForm = () => {
                   className={`appearance-none bg-transparent border ${
                     touched.lastName && errors.lastName
                       ? "border-red-500"
-                      : "border-primary-100"
-                  } w-full text-primary-500  py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
+                      : "border-primary-500"
+                  } w-full text-gray-600 capitalize py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="text"
                   placeholder="Doe"
                 />
@@ -89,7 +90,7 @@ const ContactForm = () => {
             <div className="flex items-center mb-4">
               <div className="w-full mr-3">
                 <label
-                  class=" text-primary-400 text-base font-bold mb-2"
+                  class=" text-primary-500 text-base font-bold mb-2"
                   for="email"
                 >
                   Email
@@ -99,15 +100,15 @@ const ContactForm = () => {
                   className={`appearance-none bg-transparent border ${
                     touched.email && errors.email
                       ? "border-red-500"
-                      : "border-primary-100"
-                  } w-full text-primary-500 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
+                      : "border-primary-500"
+                  } w-full text-gray-600 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="email"
                   placeholder="johndoe@gmail.com"
                 />
               </div>
               <div className="w-full">
                 <label
-                  class=" text-primary-400 text-base font-bold mb-2"
+                  class=" text-primary-500 text-base font-bold mb-2"
                   for="phoneNumber"
                 >
                   Phone Number
@@ -117,8 +118,8 @@ const ContactForm = () => {
                   className={`appearance-none bg-transparent border ${
                     touched.phoneNumber && errors.phoneNumber
                       ? "border-red-500"
-                      : "border-primary-100"
-                  } w-full text-primary-500 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
+                      : "border-primary-500"
+                  } w-full text-gray-600 capitalize py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="text"
                   placeholder="+254 701234567"
                 />
@@ -126,7 +127,7 @@ const ContactForm = () => {
             </div>
             <div className="w-full">
               <label
-                class=" text-primary-400 text-base font-bold mb-2"
+                class=" text-primary-500 text-base font-bold mb-2"
                 for="subject"
               >
                 Subject
@@ -136,15 +137,15 @@ const ContactForm = () => {
                 className={`appearance-none bg-transparent border ${
                   touched.subject && errors.subject
                     ? "border-red-500"
-                    : "border-primary-100"
-                } w-full text-primary-500 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
+                    : "border-primary-500"
+                } w-full text-gray-600 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                 type="text"
                 placeholder="i.e Request for charter services"
               />
             </div>
             <div className="w-full mt-5">
               <label
-                class="text-primary-400 text-base font-bold mb-2"
+                class="text-primary-500 text-base font-bold mb-2"
                 for="lastName"
               >
                 Message
@@ -156,8 +157,8 @@ const ContactForm = () => {
                 className={`appearance-none bg-transparent border ${
                   touched.message && errors.message
                     ? "border-red-500"
-                    : "border-primary-100"
-                } w-full text-primary-500  mr-3 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
+                    : "border-primary-500"
+                } w-full text-gray-600 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                 type="text"
                 placeholder="Your message..."
               />
@@ -174,7 +175,7 @@ const ContactForm = () => {
           </Form>
         )}
       </Formik>
-    </div>
+    </Card>
   );
 };
 
