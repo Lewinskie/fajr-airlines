@@ -42,6 +42,10 @@ const ContactForm = () => {
         We are here to help and answer any queries you might have. We look
         forward to hear from you
       </h4> */}
+      <h4 className="text-primary-500 uppercase leading-relaxed font-serif text-lg">
+        Talk to us
+      </h4>
+      <div className="w-full border-b border-primary-500 mb-10" />
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
