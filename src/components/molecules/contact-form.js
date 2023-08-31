@@ -49,8 +49,8 @@ const ContactForm = () => {
       >
         {({ touched, errors }) => (
           <Form className="w-full mt-6">
-            <div className="flex items-center mb-4">
-              <div className="w-full mr-3">
+            <div className="w-full sm:flex sm:flex-row md:space-x-3">
+              <div className="w-full mr-3 mb-4 sm:mb-4">
                 <label
                   class=" text-primary-500 text-base font-bold mb-2"
                   for="firstName"
@@ -68,7 +68,7 @@ const ContactForm = () => {
                   placeholder="John"
                 />
               </div>
-              <div className="w-full">
+              <div className="w-full mb-4 sm:mb-4">
                 <label
                   class=" text-primary-500 text-base font-bold mb-2"
                   for="lastName"
@@ -87,8 +87,8 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="flex items-center mb-4">
-              <div className="w-full mr-3">
+            <div className="w-full sm:flex sm:flex-row md:space-x-3">
+              <div className="w-full mr-3 mb-4 sm:mb-4">
                 <label
                   class=" text-primary-500 text-base font-bold mb-2"
                   for="email"
@@ -106,7 +106,7 @@ const ContactForm = () => {
                   placeholder="johndoe@gmail.com"
                 />
               </div>
-              <div className="w-full">
+              <div className="w-full mb-4 sm:mb-4">
                 <label
                   class=" text-primary-500 text-base font-bold mb-2"
                   for="phoneNumber"
