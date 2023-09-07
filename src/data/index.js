@@ -4,8 +4,8 @@ import hero3 from "../../public/inside-plane.jpg";
 import Nairobi from "../../public/nairobi.jpg";
 import Mogadishu from "../../public//mogadishu.jpg";
 
-import AfBAA from "../../public/AfBAA.jpg";
-import afraa from "../../public/afraa.png";
+// import AfBAA from "../../public/AfBAA.jpg";
+// import afraa from "../../public/afraa.png";
 import kaoo from "../../public/kaoo.jpg";
 import kata from "../../public/kata.png";
 

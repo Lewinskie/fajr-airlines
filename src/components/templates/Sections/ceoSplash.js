@@ -3,11 +3,9 @@ import Image from "next/image";
 import React from "react";
 import AboutImage from "../../../../public/FAH_1364 copy.webp";
 import { Container } from "@mui/material";
-// import
 
 function CeoSplash({ message }) {
   const { ceo_message } = message;
-  console.log(ceo_message);
   return (
     <>
       <div className="relative h-[80vw] md:h-[34vw]">
