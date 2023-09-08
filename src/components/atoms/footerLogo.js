@@ -12,7 +12,7 @@ function FooterLogo() {
           width={80}
           height={40}
         />
-        <h4 className="font-bold text-xl font-sans text-white">
+        <h4 className="font-bold text-xl font-sans text-white uppercase">
           Dragon<span className="text-secondary-500">Fly</span> Aviation
         </h4>
       </a>

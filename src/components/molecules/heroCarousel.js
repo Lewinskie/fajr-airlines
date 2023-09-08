@@ -35,25 +35,30 @@ function HeroCarousel({ heroCarousel_data }) {
             className="relative h-[80vw] md:h-[54vw]"
           >
             {/* Our Carousel Image */}
-            <Image
-              src={heroImage.hero_url}
-              alt="alt text"
-              width={1200}
-              height={300}
-              // fill
-              // object-fit="cover"
-              // object-position="center"
-              className={` -z-10 block h-auto w-full text-secondary-500 duration-700 ease-in-out  ${
-                isLoading ? "scale-110  blur-2xl  " : "scale-100 blur-0  "
-              }`}
-              onLoadingComplete={() => setLoading(false)}
-              // priority="true"
-              // quality={75}
-            />
+            <div
+              style={{
+                position: "relative",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                src={heroImage.hero_url}
+                alt="alt text"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center 25%"
+                className={` -z-10 block h-auto w-full text-secondary-500 duration-700 ease-in-out  ${
+                  isLoading ? "scale-110  blur-2xl  " : "scale-100 blur-0  "
+                }`}
+                onLoadingComplete={() => setLoading(false)}
+              />
+            </div>
+
             {/* Blue Overlay */}
             <div className="absolute inset-0 bg-primary-500 opacity-50 "></div>
             <div className="absolute bottom-0 left-0  h-full w-full flex flex-row justify-start">
-              <div className="max-w-7xl mx-auto flex flex-col items-start justify-center w-1/2">
+              <div className="max-w-7xl mx-auto flex flex-col items-start justify-center w-3/5">
                 <h1 className="text-4xl font-sans font-bold leading-noramal text-gray-50 ">
                   {heroImage.short_title}
                 </h1>
@@ -62,7 +67,7 @@ function HeroCarousel({ heroCarousel_data }) {
                 </p>
                 <div className="flex flex-row items-center justify-start space-x-10">
                   <div className="my-4">
-                    <Link href={heroImage.page_link} className="">
+                    {/* <Link href={heroImage.page_link} className="">
                       <Button
                         className="flex items-center"
                         intent="primary"
@@ -70,8 +75,8 @@ function HeroCarousel({ heroCarousel_data }) {
                       >
                         <span className="pr-4">Learn More</span>
                         {/* <span>Book Now</span> */}
-                      </Button>
-                    </Link>
+                    {/* </Button> */}
+                    {/* </Link>  */}
                   </div>
                 </div>
                 {/* <div className="flex flex-row items-center justify-center">

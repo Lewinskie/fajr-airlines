@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Fleet1 from "../../../../public/plane11.jpg";
+import Fokker from "../../../../public/fokker_photo.jpg";
 import { Container } from "@mui/material";
 
 function Fleets({}) {
@@ -10,8 +11,6 @@ function Fleets({}) {
         <Image
           src={Fleet1}
           alt="alt text"
-          // width={1200}
-          // height={300}
           fill
           object-fit="cover"
           object-position="center"
@@ -29,16 +28,13 @@ function Fleets({}) {
       <Container>
         <div className="max-w-7xl mx-auto grid grid-rows-1 md:grid-rows-2 gap-5 my-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
-            <div className="relative h-[500px]">
+            <div style={{ position: "relative", paddingTop: "45%" }}>
               <Image
-                src={Fleet1}
+                src={Fokker}
                 alt="alt text"
-                // width={1200}
-                // height={300}
-                fill
-                object-fit="cover"
-                object-position="center"
-                className="absolute "
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
               />
             </div>
             <div className="flex flex-col items-start justify-evenly">
@@ -51,6 +47,10 @@ function Fleets({}) {
                 reverse capabilities. The aircraft is pressurized which permits
                 it to fly up to 25,000 feet.
               </p>
+              <h2 className="font-sans text-xl text-primary-500 font bold my-5 uppercase">
+                crew composition
+              </h2>
+
               <p className="leading-relaxed text-base font-serif text-secondary-500">
                 <span className="px-3 text-primary-500 font-bold">2</span>{" "}
                 Pilots
