@@ -6,9 +6,9 @@ import { Container, Grid } from "@mui/material";
 function Footer() {
   return (
     <div className=" bg-primary-500 pt-4 pb-2">
-      <footer className="mx-auto max-w-7xl text-base font-sans tracking-wide text-white pb-10">
+      <footer className="text-base font-sans tracking-wide text-white pb-10">
         <Container>
-          <Grid container>
+          <Grid container spacing={3}>
             <Grid
               item
               xs={12}
@@ -35,7 +35,7 @@ function Footer() {
               item
               xs={12}
               sm={6}
-              md={3}
+              md={2}
               sx={{
                 justifyContent: { sm: "center", xs: "center" },
                 textAlign: { xs: "center", sm: "start" },
@@ -56,7 +56,7 @@ function Footer() {
               item
               xs={12}
               sm={6}
-              md={3}
+              md={4}
               sx={{
                 justifyContent: { sm: "center", xs: "center" },
                 textAlign: { xs: "center", sm: "start" },
