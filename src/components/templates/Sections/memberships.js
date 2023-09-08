@@ -2,7 +2,6 @@ import { Container, Grid } from "@mui/material";
 import Image from "next/image";
 
 function Memberships({ memberships }) {
-  console.log(memberships);
   return (
     <Container className="my-10 py-5">
       <div className="my-5 flex flex-row items-center justify-start gap-4 mb-6">
