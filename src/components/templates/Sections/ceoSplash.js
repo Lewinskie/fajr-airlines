@@ -9,14 +9,18 @@ function CeoSplash({ message }) {
   return (
     <>
       <div className="relative h-[80vw] md:h-[34vw]">
-        <Image
-          src={AboutImage}
-          alt="alt text"
-          fill
-          object-fit="cover"
-          object-position="center"
-          className="-z-10 brightness-50 object-none"
-        />
+        <div
+          style={{ position: "relative", height: "100%", overflow: "hidden" }}
+        >
+          <Image
+            src={AboutImage}
+            alt="alt text"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center 25%"
+            className="-z-10 brightness-50 object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
         <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
           <Container>

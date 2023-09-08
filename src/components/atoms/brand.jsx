@@ -12,7 +12,7 @@ function Logo() {
           width={80}
           height={50}
         />
-        <h4 className="font-bold text-xl font-sans">
+        <h4 className="font-bold text-xl font-sans uppercase">
           Dragon<span className="text-secondary-500">Fly</span> Aviation
         </h4>
       </a>

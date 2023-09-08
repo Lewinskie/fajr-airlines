@@ -1,20 +1,20 @@
 import Image from "next/image";
-import ServicesSplashImage from "../../../../public/hero2.webp";
+import ServicesSplashImage from "../../../../public/coreValues.webp";
 import { Container } from "@mui/material";
 
 function ServicesSplash({}) {
   return (
     <div className="relative h-[80vw] md:h-[34vw]">
-      <Image
-        src={ServicesSplashImage}
-        alt="alt text"
-        // width={1200}
-        // height={300}
-        fill
-        object-fit="cover"
-        object-position="center"
-        className="-z-10 brightness-50 object-none"
-      />
+      <div style={{ position: "relative", height: "100%", overflow: "hidden" }}>
+        <Image
+          src={ServicesSplashImage}
+          alt="alt text"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center 20%"
+          className="-z-10 brightness-50 object-cover"
+        />
+      </div>
       <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
       <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
         <Container>

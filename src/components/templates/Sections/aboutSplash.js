@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React, { useState } from "react";
-import AboutImage from "../../../../public/FAH_1364 copy.webp";
+import AboutImage from "../../../../public/aboutSplash.webp";
 import { Container } from "@mui/material";
 
 function AboutSplash({ teamlist, about_us }) {
@@ -10,16 +10,18 @@ function AboutSplash({ teamlist, about_us }) {
   return (
     <>
       <div className="relative h-[80vw] md:h-[34vw]">
-        <Image
-          src={AboutImage}
-          alt="alt text"
-          // width={1200}
-          // height={300}
-          fill
-          object-fit="cover"
-          object-position="center"
-          className="-z-10 brightness-50 object-none"
-        />
+        <div
+          style={{ position: "relative", height: "100%", overflow: "hidden" }}
+        >
+          <Image
+            src={AboutImage}
+            alt="alt text"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center 10%"
+            className="-z-10 brightness-50 object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
         <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
           <Container>
@@ -42,42 +44,48 @@ function AboutSplash({ teamlist, about_us }) {
         </div>
       </div>
 
+      {/* <div className="max-w-7xl mx-auto"> */}
       <Container>
-        <div className="max-w-7xl mx-auto">
-          {/* About us message section */}
+        {/* About us message section */}
+        <div
+          style={{ marginTop: "4rem", display: "flex", alignItems: "center" }}
+        >
           <div
-            style={{ marginTop: "4rem", display: "flex", alignItems: "center" }}
-          >
-            <div
-              className=" h-1 w-10 rounded bg-red-500"
-              style={{ marginRight: "1rem" }}
-            ></div>
-            <h4 className=" uppercase text-2xl font-bold">Who are we?</h4>
-          </div>
+            className=" h-1 w-10 rounded bg-red-500"
+            style={{ marginRight: "1rem" }}
+          ></div>
+          <h4 className=" uppercase text-2xl font-bold">Who are we?</h4>
+        </div>
 
-          <div className="my-10 flex flex-row items-center justify-start  gap-4 ">
-            {paragraphs.map((paragraph, index) => (
-              <div key={index}>
-                <p
-                  className="leading-relaxed text-base font-serif"
-                  style={{ marginBottom: "1rem" }}
-                >
-                  {paragraph.p1}
-                </p>
-                <p
-                  className="leading-relaxed text-base font-serif"
-                  style={{ marginBottom: "1rem" }}
-                >
-                  {paragraph.p2}
-                </p>
-                <p className="leading-relaxed text-base font-serif">
-                  {paragraph.p3}
-                </p>
-              </div>
-            ))}
-          </div>
-          {/* Our Vision and Mission Sections */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-20">
+        <div className="my-10 flex flex-row items-center justify-start  gap-4 ">
+          {paragraphs.map((paragraph, index) => (
+            <div key={index}>
+              <p
+                className="leading-relaxed text-base font-serif"
+                style={{ marginBottom: "1rem" }}
+              >
+                {paragraph.p1}
+              </p>
+              <p
+                className="leading-relaxed text-base font-serif"
+                style={{ marginBottom: "1rem" }}
+              >
+                {paragraph.p2}
+              </p>
+              <p className="leading-relaxed text-base font-serif">
+                {paragraph.p3}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Container>
+      {/* Our Vision and Mission Sections */}
+      <div style={{ background: "#E6E8F8", width: "100%" }} className="py-8">
+        <Container>
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            style={{ background: "#E6E8F8", width: "100%" }}
+          >
             <div>
               <h2 className="font-sans text-2xl font bold my-5">Our Vision</h2>
               <p className="leading-relaxed text-base font-serif">
@@ -95,51 +103,52 @@ function AboutSplash({ teamlist, about_us }) {
               </p>
             </div>
           </div>
-          {/* Our Team */}
-          <div className="my-10">
-            <div className="my-20 flex flex-row items-center justify-start  gap-4 ">
-              <div className=" h-1 w-10 rounded bg-red-500"></div>
-              <h4 className=" uppercase text-2xl font-bold">Meet Out Team</h4>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {team.map((member) => (
-                <div
-                  key={member.id}
-                  className="bg-white rounded-lg shadow-2xl-primary"
-                >
+        </Container>
+      </div>
+      {/* Our Team */}
+      <Container>
+        <div className="my-10">
+          <div className="my-20 flex flex-row items-center justify-start  gap-4 ">
+            <div className=" h-1 w-10 rounded bg-red-500"></div>
+            <h4 className=" uppercase text-2xl font-bold">Meet Out Team</h4>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
+            {team.map((member) => (
+              <div
+                key={member.id}
+                className="bg-white rounded-lg shadow-2xl-primary"
+              >
+                <div className="relative " style={{ height: "380px" }}>
                   <div
-                    className="relative  overflow-hidden rounded-t-lg"
-                    style={{ height: "380px" }}
+                    style={{
+                      position: "relative",
+                      height: "100%",
+                      overflow: "hidden",
+                    }}
                   >
                     <Image
                       src={member.image_url}
-                      alt={member.name}
-                      width={1200}
-                      height={500}
+                      alt="alt text"
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center 18%"
                     />
                   </div>
-                  <div className="p-4">
-                    <h2 className=" font-bold font-sans text-xl  ">
-                      {member.name}
-                    </h2>
-                    <p className="leading-relaxed text-base text-secondary-300 font-serif ">
-                      {member.title}
-                    </p>
-                    {/* <Button
-                href="#"
-                intent="primary"
-                size="medium"
-                // className="inline-block mt-4 px-4 py-2 bg-secondary-500 text-white rounded-lg"
-              >
-                Learn more
-              </Button> */}
-                  </div>
                 </div>
-              ))}
-            </div>
+                <div className="p-4">
+                  <h2 className=" font-bold font-sans text-xl  ">
+                    {member.name}
+                  </h2>
+                  <p className="leading-relaxed text-base text-secondary-300 font-serif ">
+                    {member.title}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </Container>
+      {/* </div> */}
     </>
   );
 }
