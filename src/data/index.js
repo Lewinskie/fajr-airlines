@@ -1,6 +1,8 @@
 import hero1 from "../../public/plane11.jpg";
 import hero2 from "../../public/FAH_1364 copy.webp";
 import hero3 from "../../public/inside-plane.jpg";
+import DRG from "../../public/DSC_4920-Pano copy.jpg";
+import DRG_CREW from "../../public/DSC_4702 copy.jpg";
 import Nairobi from "../../public/nairobi.jpg";
 import Mogadishu from "../../public//mogadishu.jpg";
 
@@ -211,20 +213,6 @@ export const memberships = {
       web_url: "https://aviationkenya.org/",
       logo_url: kaoo,
     },
-    // {
-    //   id: 3,
-    //   acronym: "AFRAA",
-    //   names: "Africa Airlines Association - Ongoing",
-    //   web_url: "https://www.afraa.org/",
-    //   logo_url: afraa,
-    // },
-    // {
-    //   id: 4,
-    //   acronym: "AfBAA",
-    //   names: "The African Business Aviation Association - Ongoing",
-    //   web_url: "https://afbaa.org/news/",
-    //   logo_url: AfBAA,
-    // },
   ],
 };
 
@@ -449,7 +437,7 @@ export const team = {
 export const heroCarousel_data = [
   {
     id: 1,
-    hero_url: hero1,
+    hero_url: DRG_CREW,
     page_link: "/about",
     long_title:
       "Premium Charter Aircraft Services for Cargo and Passenger Transportation",
@@ -459,7 +447,7 @@ export const heroCarousel_data = [
   },
   {
     id: 2,
-    hero_url: hero2,
+    hero_url: DRG,
     page_link: "/about",
     long_title:
       "Transform Lives with Efficient and Trusted Humanitarian Air Services",

@@ -25,14 +25,14 @@ function Destinations({ destinations }) {
               <p className="leading-relaxed text-base font-serif h-28">
                 {destination.description}
               </p>
-              <Button
+              {/* <Button
                 href="#"
                 intent="primary"
                 size="medium"
                 className="inline-block mt-4 px-4 py-2  text-white rounded-lg"
               >
                 Learn more
-              </Button>
+              </Button> */}
             </div>
           </div>
         ))}

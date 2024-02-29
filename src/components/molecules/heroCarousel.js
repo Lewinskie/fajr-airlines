@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Button } from "../cva/buttonCVA";
 
 // Import Swiper styles
 import "swiper/css";
@@ -26,13 +24,13 @@ function HeroCarousel({ heroCarousel_data }) {
       }}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
-      className="group  h-[70vh]  overflow-hidden "
+      className="group  h-[85vh]  overflow-hidden "
     >
       {heroCarousel_data.map((heroImage, i) => {
         return (
           <SwiperSlide
             key={heroImage.id}
-            className="relative h-[80vw] md:h-[54vw]"
+            className="relative h-[90vw] md:h-[54vw]"
           >
             {/* Our Carousel Image */}
             <div
@@ -47,7 +45,7 @@ function HeroCarousel({ heroCarousel_data }) {
                 alt="alt text"
                 layout="fill"
                 objectFit="cover"
-                objectPosition="center 25%"
+                objectPosition="left 5% top 20%"
                 className={` -z-10 block h-auto w-full text-secondary-500 duration-700 ease-in-out  ${
                   isLoading ? "scale-110  blur-2xl  " : "scale-100 blur-0  "
                 }`}
@@ -66,24 +64,8 @@ function HeroCarousel({ heroCarousel_data }) {
                   {heroImage.hero_phrase}
                 </p>
                 <div className="flex flex-row items-center justify-start space-x-10">
-                  <div className="my-4">
-                    {/* <Link href={heroImage.page_link} className="">
-                      <Button
-                        className="flex items-center"
-                        intent="primary"
-                        size="medium"
-                      >
-                        <span className="pr-4">Learn More</span>
-                        {/* <span>Book Now</span> */}
-                    {/* </Button> */}
-                    {/* </Link>  */}
-                  </div>
+                  <div className="my-4"></div>
                 </div>
-                {/* <div className="flex flex-row items-center justify-center">
-                  <button className="mr-1 mb-1 rounded bg-red-500 px-4 py-1 text-base font-semibold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:shadow-md focus:outline-none active:bg-red-600">
-                    Sign Up
-                  </button>
-                </div> */}
               </div>
             </div>
           </SwiperSlide>

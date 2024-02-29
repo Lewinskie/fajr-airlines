@@ -6,7 +6,9 @@ function Services({}) {
     <>
       <ServicesSplash />
       <div className="max-w-7xl mx-auto">
+        <div style={{ marginTop: "4rem" }} />
         <ServiceBrief />
+        <div style={{ marginTop: "4rem" }} />
       </div>
     </>
   );

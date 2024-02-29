@@ -9,7 +9,7 @@ function AboutSplash({ teamlist, about_us }) {
   const { paragraphs } = about_us;
   return (
     <>
-      <div className="relative h-[80vw] md:h-[34vw]">
+      <div className="relative h-[40vw] md:h-[24vw]">
         <div
           style={{ position: "relative", height: "100%", overflow: "hidden" }}
         >
@@ -17,12 +17,19 @@ function AboutSplash({ teamlist, about_us }) {
             src={AboutImage}
             alt="alt text"
             layout="fill"
-            objectFit="cover"
-            objectPosition="center 10%"
+            objectFit={["cover", "fill"]} // Use 'fill' for large screens
+            objectPosition="left 1% top 15%"
             className="-z-10 brightness-50 object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
+        {/* <div className="absolute inset-0 bg-primary-600 opacity-80 "></div> */}{" "}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top, rgba(0,3,69,0.8) 0%, rgba(0,3,69,0.2) 100%)",
+          }}
+        ></div>
         <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
           <Container>
             <div className="max-w-7xl mx-auto">

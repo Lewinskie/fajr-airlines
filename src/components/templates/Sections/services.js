@@ -26,28 +26,7 @@ function Services({ services_data }) {
           <div className=" h-1 w-10 rounded bg-red-500"></div>
           <h4 className=" uppercase text-2xl font-bold">Our Services</h4>
         </div>
-        {/* <div className="container px-2 py-8 mx-auto flex flex-row">
-          {services_data.services.map((service, i) => {
-            return (
-              <div key={i} className="p-4 md:w-1/3 flex items-center">
-                <div className="w-12 h-12 inline-flex items-center justify-center  text-secondary-500 mb-4">
-                  {getIcon(service.icon)}
-                </div>
-                <div className="flex-grow pl-6">
-                  <h2 className=" font-sans font-bold mb-4">{service.title}</h2>
 
-                  <p className="leading-relaxed text-base font-serif">
-                    {service.text}
-                  </p>
-                  <a className="mt-3 text-secondary-500 inline-flex items-center">
-                    Learn More
-                    <ArrowRightAltOutlinedIcon style={{ fontSize: 28 }} />
-                  </a>
-                </div>
-              </div>
-            );
-          })}
-        </div> */}
         <Grid container spacing={3} className="container px-2 py-8">
           {services_data &&
             services_data.services.map((service, i) => (
@@ -68,10 +47,10 @@ function Services({ services_data }) {
                   <p className="leading-relaxed text-base font-serif">
                     {service.text}
                   </p>
-                  <a className="mt-3 text-secondary-500 inline-flex items-center">
+                  {/* <a className="mt-3 text-secondary-500 inline-flex items-center">
                     Learn More
                     <ArrowRightAltOutlinedIcon style={{ fontSize: 28 }} />
-                  </a>
+                  </a> */}
                 </div>
               </Grid>
             ))}

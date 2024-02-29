@@ -9,7 +9,12 @@ const FleetCard = () => {
   const aircrafts = [
     {
       name: "Fokker 50 Series",
-      images: ["/fokker_photo.jpg", "/fokker_photo.jpg", "/fokker_photo.jpg"],
+      images: [
+        "/fokker_photo.jpg",
+        "/IMG-20240226-WA0057.jpg",
+        "/IMG-20240226-WA0062.jpg",
+        "/IMG-20240226-WA0054.jpg",
+      ],
       description:
         "The F-50 is powered by two Pratt & Whitney PW 125B turboprop engines. The propellers are six-bladed with full feathering and reverse capabilities. The aircraft is pressurized, which permits it to fly up to 25,000 feet.",
       crewComposition: [
@@ -22,10 +27,11 @@ const FleetCard = () => {
     {
       name: "DHC-8-400",
       images: [
-        "/DSC_4920-Pano copy.jpg",
+        // "/DSC_4920-Pano copy.jpg",
         "/DSC_4885-Pano copy.jpg",
         "/DSC_4719 copy.jpg",
-        "/DSC_4960.jpg",
+        "/DSC_4720 copy.jpg",
+        // "/DSC_4960.jpg",
         "/DSC_4783.jpg",
       ],
       description:
@@ -34,7 +40,7 @@ const FleetCard = () => {
         { role: "Pilots", quantity: 2 },
         { role: "Cabin Crew", quantity: 2 },
         { role: "Engineer", quantity: 1 },
-        { role: "Passengers", quantity: 78 },
+        { role: "Passengers", quantity: 76 },
       ],
     },
   ];
@@ -42,11 +48,12 @@ const FleetCard = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
+    fade: true,
   };
 
   return (
