@@ -21,7 +21,7 @@ function CeoSplash({ message }) {
             className="-z-10 brightness-50 object-cover"
           />
         </div>
-        {/* <div className="absolute inset-0 bg-primary-600 opacity-40 "></div> */}
+        
         <div
           className="absolute inset-0"
           style={{

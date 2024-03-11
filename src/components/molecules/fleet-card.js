@@ -35,7 +35,7 @@ const FleetCard = () => {
         "/DSC_4783.jpg",
       ],
       description:
-        "The DHC-8 Series 400 is a high wing airplane manufactured by Bombardier Aerospace with shared interests from several partners. It is powered by two 5071 shaft horsepower PW 150A turboprop engines (Pratt & Whitney). Each engine drives a 6 blade propeller. The DHC-8 series 400 is a two pilot transport category transport category airplane approved for instrument flight and operation to a maximum altitude of 25000 ft.",
+        "The DHC-8 Series 400 is a high wing airplane manufactured by Bombardier Aerospace with shared interests from several partners. It is powered by two 5071 shaft horsepower PW 150A turboprop engines (Pratt & Whitney) and flies up to 25,000 feet.",
       crewComposition: [
         { role: "Pilots", quantity: 2 },
         { role: "Cabin Crew", quantity: 2 },

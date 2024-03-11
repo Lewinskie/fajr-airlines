@@ -166,8 +166,20 @@ export const services_data = {
     {
       id: 2,
       icon: "Diversity3OutlinedIcon",
-      title: "HUMANITARIAN AND RELIEF SERVICES",
-      text: "Dragonfly: Saving lives, offering swift access to disaster zones. Transporting aid, personnel, and performing critical medical and security evacuations.",
+      title: "ACMI SOLUTIONS",
+      text: "ACMI solutions involve providing complete aircraft services, including the aircraft itself, trained crew, maintenance, and insurance.  ",
+    },
+    {
+      id: 3,
+      icon: "CalendarMonthOutlinedIcon",
+      title: "ADHOC FLIGHTS",
+      text: "These flights that are arranged on a case-by-case basis, without a fixed schedule. They are typically organized in response to specific requests or unforeseen circumstances.  ",
+    },
+    {
+      id: 4,
+      icon: "AirlinesIcon",
+      title: "SPECIALIZED OPERATIONS",
+      text: "Dragonfly Aviation engages in specialized operations which could include missions such as emergency evacuations",
     },
   ],
 };

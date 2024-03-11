@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Charter from "../../../../public/FAH_1364 copy.webp";
 import Humanitarian from "../../../../public/IMG-20240226-WA0056.jpg";
+import Adhoc from "../../../../public/DSC_4765 copy.jpg";
+import Specialized from "../../../../public/DSC_4714 copy.jpg";
 import { Container, Typography, Grid, Card, CardContent } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,16 +13,34 @@ function ServiceBrief({}) {
     {
       name: "Charter Flights",
       images: [Charter],
-      description: `Experience the pinnacle of aviation excellence: Embark on a
-      transformative journey as we offer our esteemed clients
-      exclusive charter services. Contact us today to book your next charter flight and experience the difference firsthand.`,
+      // Experience the pinnacle of aviation excellence: Embark on a
+      // transformative journey as we offer our esteemed clients
+      // exclusive charter services. Contact us today to book your next charter flight and experience the difference firsthand.
+      description: `
+      Dragonfly Aviation offers charter flights, providing a flexible and tailored air travel solution. Most clients prefer Charter flights for convenience and flexibility, allowing them to customize travel schedules and destinations according to their specific requirements. 
+      `,
+    },
+    // {
+    //   name: "Humanitarian And Relief Services",
+    //   images: [Humanitarian],
+    //   description: `Saving lives, offering swift access to disaster zones.
+    //   Transporting aid, personnel, and performing critical medical and
+    //   security evacuations.`,
+    // },
+    {
+      name: "ACMI Solutions (Aircraft, Crew, Maintenance & Insurance)",
+      images: [Humanitarian],
+      description: `ACMI solutions involve providing complete aircraft services, including the aircraft itself, trained crew, maintenance, and insurance. This comprehensive package is often sought by airlines or organizations that require a temporary or long-term solution to meet their operational needs without the burden of managing the entire process. `,
     },
     {
-      name: "Humanitarian And Relief Services",
-      images: [Humanitarian],
-      description: `Saving lives, offering swift access to disaster zones.
-      Transporting aid, personnel, and performing critical medical and
-      security evacuations.`,
+      name: "Adhoc Flights",
+      images: [Adhoc],
+      description: `These flights that are arranged on a case-by-case basis, without a fixed schedule. They are typically organized in response to specific requests or unforeseen circumstances. Dragonfly Aviation's capability to offer ad-hoc flights adds a layer of flexibility for clients who may have immediate or unplanned travel needs. `,
+    },
+    {
+      name: "Specialized Operations",
+      images: [Specialized],
+      description: `Dragonfly Aviation engages in specialized operations which could include missions such as emergency evacuations. `,
     },
   ];
 
@@ -59,7 +79,7 @@ function ServiceBrief({}) {
                             alt={brief.name}
                             layout="fill"
                             objectFit="cover"
-                            // objectPosition="left center"
+                            objectPosition="center top"
                             priority={true}
                           />
                         </div>

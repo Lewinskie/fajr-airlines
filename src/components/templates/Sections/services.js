@@ -2,7 +2,8 @@ import React from "react";
 import FlightTakeoffOutlinedIcon from "@mui/icons-material/FlightTakeoffOutlined";
 import Diversity3OutlinedIcon from "@mui/icons-material/Diversity3Outlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
-import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
+import AirlinesIcon from "@mui/icons-material/Airlines";
+
 import { Container, Grid } from "@mui/material";
 
 function getIcon(iconName) {
@@ -13,6 +14,8 @@ function getIcon(iconName) {
       return <Diversity3OutlinedIcon style={{ fontSize: 48 }} />;
     case "CalendarMonthOutlinedIcon":
       return <CalendarMonthOutlinedIcon style={{ fontSize: 48 }} />;
+    case "AirlinesIcon":
+      return <AirlinesIcon style={{ fontSize: 48 }} />;
     default:
       return null;
   }
@@ -30,15 +33,17 @@ function Services({ services_data }) {
         <Grid container spacing={3} className="container px-2 py-8">
           {services_data &&
             services_data.services.map((service, i) => (
-              <Grid
-                key={i}
-                item
-                xs={12}
-                sm={6}
-                lg={4}
-                className="p-4 flex items-center"
-              >
-                <div items-center justify-center text-secondary-500 mb-4>
+              <Grid key={i} item xs={12} sm={6} lg={3} className="p-4 flex ">
+                <div
+                  text-secondary-500
+                  mb-4
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
                   {getIcon(service.icon)}
                 </div>
                 <div className="pl-6">
@@ -47,10 +52,6 @@ function Services({ services_data }) {
                   <p className="leading-relaxed text-base font-serif">
                     {service.text}
                   </p>
-                  {/* <a className="mt-3 text-secondary-500 inline-flex items-center">
-                    Learn More
-                    <ArrowRightAltOutlinedIcon style={{ fontSize: 28 }} />
-                  </a> */}
                 </div>
               </Grid>
             ))}

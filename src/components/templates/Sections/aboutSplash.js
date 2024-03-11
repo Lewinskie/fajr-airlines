@@ -34,18 +34,6 @@ function AboutSplash({ teamlist, about_us }) {
           <Container>
             <div className="max-w-7xl mx-auto">
               <h1 className="text-3xl text-neutral-500">About Us</h1>
-              {/* <p className="text-base text-white font-serif mt-2 w-1/2">
-            We have a highly experienced management team with the expertise and
-            industry knowledge to deliver our services to diverse clients. Our
-            employees are the heart of our company, and we value their ongoing
-            commitment and dedication to our continued success. As per KCAA AOC
-            and Admin regulations we have a team of 6 Nominated post holders all
-            that have been accepted by the authority after a vigorous interview
-            process. The 6 are the Accountable Manager, Head of Quality, Head of
-            Operations, Chief Pilot, Head of Safety and the Head of Maintenance.
-            Other managers are Cabin Crew Manager, Security Manager and
-            Operations Manager.
-          </p> */}
             </div>
           </Container>
         </div>
