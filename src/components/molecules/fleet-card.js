@@ -11,7 +11,7 @@ const FleetCard = () => {
       name: "Fokker 50 Series",
       images: [
         "/fokker_photo.jpg",
-        "/IMG-20240226-WA0057.jpg",
+        "/IMG-20240226-WA0061.jpg",
         "/IMG-20240226-WA0062.jpg",
         "/IMG-20240226-WA0054.jpg",
       ],
@@ -31,7 +31,7 @@ const FleetCard = () => {
         "/DSC_4885-Pano copy.jpg",
         "/DSC_4719 copy.jpg",
         "/DSC_4720 copy.jpg",
-        // "/DSC_4960.jpg",
+        "/DSC_4953.jpg",
         "/DSC_4783.jpg",
       ],
       description:
@@ -71,7 +71,7 @@ const FleetCard = () => {
                         alt={aircraft.name}
                         layout="fill"
                         objectFit="cover"
-                        // objectPosition="left center"
+                        // objectPosition="left top"
                         priority={true}
                       />
                     </div>

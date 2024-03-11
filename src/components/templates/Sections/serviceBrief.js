@@ -35,7 +35,7 @@ function ServiceBrief({}) {
     {
       name: "Adhoc Flights",
       images: [Adhoc],
-      description: `These flights that are arranged on a case-by-case basis, without a fixed schedule. They are typically organized in response to specific requests or unforeseen circumstances. Dragonfly Aviation's capability to offer ad-hoc flights adds a layer of flexibility for clients who may have immediate or unplanned travel needs. `,
+      description: `These are flights that are arranged on a case-by-case basis, without a fixed schedule. They are typically organized in response to specific requests or unforeseen circumstances. Dragonfly Aviation's capability to offer ad-hoc flights adds a layer of flexibility for clients who may have immediate or unplanned travel needs. `,
     },
     {
       name: "Specialized Operations",

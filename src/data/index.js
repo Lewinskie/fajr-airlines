@@ -173,7 +173,7 @@ export const services_data = {
       id: 3,
       icon: "CalendarMonthOutlinedIcon",
       title: "ADHOC FLIGHTS",
-      text: "These flights that are arranged on a case-by-case basis, without a fixed schedule. They are typically organized in response to specific requests or unforeseen circumstances.  ",
+      text: "These are flights that are arranged on a case-by-case basis, without a fixed schedule. They are typically organized in response to specific requests or unforeseen circumstances.  ",
     },
     {
       id: 4,
