@@ -21,7 +21,7 @@ import Fundi from "../../public/Fundi.webp";
 import Winfred from "../../public/Winfred.webp";
 import Samuel from "../../public/Samuel.webp";
 import Gulraiz from "../../public/Gulraiz.webp";
-import Antony from "../../public/Antony.webp";
+// import Antony from "../../public/Antony.webp";
 import yasmin from "../../public/yasmin.webp";
 import Mulki from "../../public/Mulki.webp";
 
@@ -423,26 +423,26 @@ export const team = {
         },
       ],
     },
-    {
-      id: 14,
-      title: "IT Manager",
-      name: "Antony Wachira",
-      image_url: Antony,
-      paragraphs: [
-        {
-          pi: 1,
-          text: "Anthony has a wealth of experience in Network design and installation, Windows server installation, configuration, implementation, and user support. He has also been involved in deployment of web applications, user training in computer use and repair.",
-        },
-        {
-          pi: 2,
-          text: "He is all rounded in setting up, configuring deploying and maintaining networks with an array of computing accessories i.e., printers, IP phones, CCTV, routers and switches. Anthony holds a Diploma in Computer Science from Kenyatta University.",
-        },
-        {
-          pi: 3,
-          text: "He is certified in windows server administration, computer repair and maintenance and is currently undergoing studies in Web Applications and coding with Python.",
-        },
-      ],
-    },
+    // {
+    //   id: 14,
+    //   title: "IT Manager",
+    //   name: "Antony Wachira",
+    //   image_url: Antony,
+    //   paragraphs: [
+    //     {
+    //       pi: 1,
+    //       text: "Anthony has a wealth of experience in Network design and installation, Windows server installation, configuration, implementation, and user support. He has also been involved in deployment of web applications, user training in computer use and repair.",
+    //     },
+    //     {
+    //       pi: 2,
+    //       text: "He is all rounded in setting up, configuring deploying and maintaining networks with an array of computing accessories i.e., printers, IP phones, CCTV, routers and switches. Anthony holds a Diploma in Computer Science from Kenyatta University.",
+    //     },
+    //     {
+    //       pi: 3,
+    //       text: "He is certified in windows server administration, computer repair and maintenance and is currently undergoing studies in Web Applications and coding with Python.",
+    //     },
+    //   ],
+    // },
   ],
 };
 

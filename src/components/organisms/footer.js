@@ -26,8 +26,8 @@ function Footer() {
               <div>
                 <FooterLogo />
                 <p className="font-serif text-base text-white">
-                  Dragonfly Aviation Limited - Phoenix House, 2nd Floor Wilson
-                  Airport
+                  Dragonfly Aviation Limited - Aerlink Building, 1st Floor
+                  Wilson Airport
                 </p>
               </div>
             </Grid>

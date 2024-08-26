@@ -2,8 +2,9 @@ import React from "react";
 
 const Maps = () => {
   // Set your default location coordinates (latitude and longitude)
+  // fix this
   const defaultLocation =
-    "Dragonfly Aviation Ltd,Phoenix House,-1.3183,36.8133, Langata Rd, Nairobi"; // Coordinates: 1.3183° S, 36.8133° E phoenix house wilson airport
+    "Dragonfly Aviation Ltd, Aerlink Building, -1.3223997167622605, 36.8087432, Langata Rd, Nairobi"; // Coordinates: 1.3183° S, 36.8133° E phoenix house wilson airport
   return (
     <div>
       <div>
