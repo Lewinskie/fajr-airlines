@@ -6,15 +6,10 @@ function Logo() {
   return (
     <div>
       <a className="flex items-center gap-2 ">
-        <Image
-          src="/drgLogoTransparent.png"
-          alt="Image"
-          width={80}
-          height={50}
-        />
-        <h4 className="font-bold text-xl font-sans uppercase">
-          Dragon<span className="text-secondary-500">Fly</span> Aviation
-        </h4>
+        <Image src="/fajr-logo.jpeg" alt="Image" width={100} height={50} />
+        {/* <h4 className="font-bold text-xl font-sans uppercase text-orange-600">
+          Fajr &nbsp;<span className="text-primary-500">Airlines</span>
+        </h4> */}
       </a>
     </div>
   );

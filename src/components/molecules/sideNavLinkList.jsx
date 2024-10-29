@@ -28,9 +28,7 @@ function SideNavLinkList({ sticky, onClosemenu }) {
           ))}
         </ul>
       </div>
-      {/* <div>
-        <h2>Contact Use</h2>
-      </div> */}
+      
     </div>
   );
 }

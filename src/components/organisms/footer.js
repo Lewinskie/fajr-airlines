@@ -5,7 +5,7 @@ import { Container, Grid } from "@mui/material";
 
 function Footer() {
   return (
-    <div className=" bg-primary-500 pt-4 pb-2">
+    <div className=" bg-secondary-500 pt-4 pb-2">
       <footer className="text-base font-sans tracking-wide text-white pb-10">
         <Container>
           <Grid container spacing={3}>
@@ -25,9 +25,8 @@ function Footer() {
             >
               <div>
                 <FooterLogo />
-                <p className="font-serif text-base text-white">
-                  Dragonfly Aviation Limited - Aerlink Building, 1st Floor
-                  Wilson Airport
+                <p className="font-serif text-base text-white-400">
+                  Fajr airlines Limited
                 </p>
               </div>
             </Grid>
@@ -69,26 +68,26 @@ function Footer() {
                 <li className="p-1">
                   Tel:&nbsp;
                   <span className="text-base text-white">
-                    (+254) 790 554 779 -{" "}
+                    (+254) 712 123 123 -{" "}
                   </span>
                   Reception
                 </li>
                 <li className="p-1">
                   Tel:&nbsp;
                   <span className="text-base text-white">
-                    (+254) 792 600 900 -{" "}
+                    (+254) 712-123-123{" "}
                   </span>
                   Operations
                 </li>
                 <li className="p-1">
                   Email:
                   <span className="text-base text-white">
-                    &nbsp;info@dragonflyafrica.co.ke
+                    &nbsp;info@fajrairlines.com
                   </span>
                 </li>
                 <li className="p-1">
                   P.O. BOX.&nbsp;
-                  <span className="text-base text-white">3542-00506 </span>
+                  <span className="text-base text-white">1234-1234 </span>
                   Nairobi Kenya
                 </li>
               </ul>

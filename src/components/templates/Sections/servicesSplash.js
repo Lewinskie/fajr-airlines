@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ServicesSplashImage from "../../../../public/coreValues.webp";
+import ServicesSplashImage from "../../../../public/tail.png";
 import { Container } from "@mui/material";
 
 function ServicesSplash({}) {
@@ -11,7 +11,8 @@ function ServicesSplash({}) {
           alt="alt text"
           layout="fill"
           objectFit="cover"
-          objectPosition="center 20%"
+          // left (0%) and bottom (100%)
+          objectPosition="0% 90%"
           className="-z-10 brightness-50 object-cover"
         />
       </div>
@@ -19,7 +20,7 @@ function ServicesSplash({}) {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "linear-gradient(to top, rgba(0,3,69,0.8) 0%, rgba(0,3,69,0.2) 100%)",
+            "linear-gradient(to top, rgba(0,3,69,0.1) 0%, rgba(0,3,69,0.2) 40%)",
         }}
       ></div>
       <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">

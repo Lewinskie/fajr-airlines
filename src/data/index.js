@@ -1,29 +1,48 @@
-import hero1 from "../../public/plane11.jpg";
-import hero2 from "../../public/FAH_1364 copy.webp";
-import hero3 from "../../public/inside-plane.jpg";
+import hero1 from "../../public/crew1.png";
+import hero2 from "../../public/crew2.png";
+import hero3 from "../../public/airplane-sky.jpg";
 import DRG from "../../public/DSC_4920-Pano copy.jpg";
-import DRG_CREW from "../../public/DSC_4702 copy.jpg";
+import DRG_CREW from "../../public/crew1.png";
 import Nairobi from "../../public/nairobi.jpg";
 import Mogadishu from "../../public//mogadishu.jpg";
 
-// import AfBAA from "../../public/AfBAA.jpg";
-// import afraa from "../../public/afraa.png";
 import kaoo from "../../public/kaoo.jpg";
 import kata from "../../public/kata.png";
 
 // Team
-import WinnieN from "../../public/WINNIE NAFULA-PHOTO.webp";
-import Dannie from "../../public/Dannie.webp";
-import Hamdi from "../../public/Hamdi.webp";
-import Margaret from "../../public/Margaret.webp";
-import Mahat from "../../public/Mahat.webp";
-import Fundi from "../../public/Fundi.webp";
-import Winfred from "../../public/Winfred.webp";
-import Samuel from "../../public/Samuel.webp";
-import Gulraiz from "../../public/Gulraiz.webp";
-// import Antony from "../../public/Antony.webp";
-import yasmin from "../../public/yasmin.webp";
-import Mulki from "../../public/Mulki.webp";
+import User from "../../public/user-placeholder.png";
+
+// Briefs
+export const briefs = [
+  {
+    name: "Charter Flights",
+    images: [hero1, hero2],
+
+    description: `
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, explicabo sint, ea doloribus et vero sunt dolorum adipisci magni voluptate voluptatum quos. Quaerat perferendis quos iste delectus est quas eveniet!
+    `,
+  },
+  {
+    name: "Humanitarian And Relief Services",
+    images: [hero1, hero2, hero3],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quisquam. Cumque voluptatibus aut minima earum, facere, dicta illo blanditiis ipsa velit quisquam esse accusantium dolorum natus minus doloribus eaque nam?`,
+  },
+  {
+    name: "ACMI Solutions (Aircraft, Crew, Maintenance & Insurance)",
+    images: [hero1, hero2],
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi corporis ipsum, eaque omnis labore non sint nihil ullam quis asperiores quae repellat natus autem! Veritatis neque ipsa totam nobis exercitationem natus cumque repellendus saepe ut! `,
+  },
+  {
+    name: "Adhoc Flights",
+    images: [hero1, hero2],
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus voluptate repellat facilis consequatur, pariatur soluta dignissimos beatae deleniti possimus enim, numquam minus accusamus? Possimus quis iste mollitia fugit quod, recusandae consequatur asperiores commodi! Nostrum eum autem officiis quam optio. `,
+  },
+  {
+    name: "Specialized Operations",
+    images: [hero1, hero2],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis reprehenderit recusandae culpa dolorum error quaerat adipisci debitis eveniet perspiciatis illum modi, ducimus voluptatem aliquid fugit vero totam numquam omnis nulla ab. `,
+  },
+];
 
 export const NavTitles = [
   { id: 1, name: "Home", href: "/" },
@@ -55,21 +74,20 @@ export const ceo_message = {
   title: "MESSAGE FROM THE CEO",
   paragraphs: [
     {
-      p1: "A warm Karibu to Dragonfly Aviation Limited, a Charter company and humanitarian and relief service provider. We have a great passion for excellence in aviation and customer service and would like to share it with you",
-      p2: "Defying the negative predictions of drop in demand of aviation services due to the covid 19 pandemic, we dared to “dream big” and begun our operations in 2022. Our focus is to work diligently and forge our track record of excellence to win and retain your loyalty. We are honored to say that the company is already experiencing significant growth as we plan to expand our portfolio with addition of new aviation service product.",
-      p3: "We aim to become a world class aviation company focused on maintaining high standards of safety as well as offering superior customer service. We truly hope as always that you enjoy a wonderful flight experience with us and thank you for choosing Dragonfly Aviation Limited.",
+      p1: "Welcome to Fajr Airlines ,an air Charter company and humanitarian and relief service provider ready to mobilise wherever in the world you are. we know time and reliability are of the utmost importance to your development , therefore we have a great passion for excellence in aviation and customer service that we wouldd like to share with you .",
+      p2: "Our dedicated staff offers you unparalleled local knowledge ,expertise and competencies to assist your operations and to win and retain your loyalty. We are honored and proud to say that the company is vastly experiencing significant growth as we plan to expand our portfolio with addition of new aviation service product.",
+      p3: "Our goal is to become a world class aviation company focused on maintaining to high standards our own engineering team have all required equipment for flight on maintaining high standards of safety as well as offering quality customer service. We truly hope as always that you enjoy a wonderful flight experience with us and thank you for choosing Fajr Airlines Limited.",
     },
   ],
-  ceo_name: "Patricia Matu",
+  ceo_name: "John Doe",
 };
 
 export const about_us = {
   title: "ABOUT US",
   paragraphs: [
     {
-      p1: "Dragonfly Aviation Limited is an aviation company specializing in passenger and cargo services within Africa, the Indian Ocean Islands, and the Middle East. The company is headquartered in Nairobi, Kenya and operates out of Wilson and Jomo Kenyatta International Airports.",
-      p2: "Dragonfly Aviation strives to provide safe, efficient flights with excellent customer service for all of our clients.",
-      p3: "We have a highly experienced management team with the experties and industry knowledge to deliver our services to diverse clients. Our employees are the heart of our Organization, and we value their ongoing commitment and dedication to our continued success.",
+      p1: "Fajr Airlines Limited is an aviation company specializing in passenger and cargo services within East Africa . The company headquarters is in Nairobi, Kenya and operates out of Wilson and Jomo Kenyatta International Airports.",
+      p2: "aircraft , are our pride and joy and we treat them like part of the family . Our employees are the heart of our organization , and we value their ongoing commitment and dedication to our continued success.",
     },
   ],
 };
@@ -77,13 +95,13 @@ export const about_us = {
 export const vision = {
   title: "vision",
   vision:
-    "To become the most efficient and dependable air service provider in the region and beyond while contributing significantly to the country's economic growth and infrastructure development.",
+    "To be a great airline that champions the spirit of excellence in Africa and to create the ultimate experience for all of our customers.",
 };
 
 export const mission = {
   title: "Mision",
   vision:
-    "To meet the needs of our clients by providing high levels of safety, ethical business practices and excellent customer service.",
+    "To provide our clients and stakeholders services with the highest levels of safety, reliable and consistent standards",
 };
 
 export const core_values = {
@@ -92,31 +110,19 @@ export const core_values = {
       id: 1,
       icon: "icon text here",
       title: "Safety",
-      text: "We endeavor to ensure that our operational processes and procedures are reviewed on a regular basis and as a result they remain appropriate and effective. We strive to adhere to the regulations and protocols that are set by the authorities to ensure the deliverance of the highest standards of service.",
+      text: "We strive to develop and embed a safety culture in all our aviation activities that recognizes the importance and value of effective aviation safety management and acknowledges that safety is paramount.",
     },
     {
       id: 2,
       icon: "icon text here",
       title: "Quality",
-      text: "We train our staff to offer clients the best possible service. Be it a phone conversation, an email exchange or the actual service itself, our staff understand that providing quality services to our clients means they keep coming back. It’s in our best interest to always offer the very best quality in our work.",
+      text: "Values that our crew live by on every flight is being genuine , experienced and inventive together . We are committed to extraordinary performance and are passionate about continuous improvement.",
     },
     {
       id: 3,
       icon: "icon text here",
       title: "Reliability",
-      text: "Customers want to be able to trust their service provider and our clients know that they can count on us. This means we keep our commitments. We understand the value of being reliable.",
-    },
-    {
-      id: 4,
-      icon: "icon text here",
-      title: "Consistency",
-      text: "We are consistent performers, our staff are well trained, monitored and re-trained where necessary to offer clients the same exceptional service. Consistency is how we can establish trust and goodwill with our clients.",
-    },
-    {
-      id: 5,
-      icon: "icon text here",
-      title: "Team Work",
-      text: "We believe in the limitless possibilities of collaborative energy. We achieve excellence by putting collective goals ahead of personal interests. We support and encourage open communication and meaningful cooperation among colleagues from varying backgrounds and disciplines.",
+      text: "We endeavor to be consistent in keeping the highest safety standards .We are committed to extraordinary performance and are passionate about continuous improvement.",
     },
   ],
 };
@@ -125,15 +131,11 @@ export const commitment = {
   list: [
     {
       id: 1,
-      text: "Comply with and, wherever possible, exceed legislative and regulatory requirements and standards;",
+      text: "At Farj airlines we are committed to treating our people, customers and the wider community with dignity and respect and to deliver safe, reliable, efficient, and pleasant travel experience exceeding customer expectations.",
     },
     {
       id: 2,
-      text: "Develop and embed a safety culture in all our aviation activities that recognizes the importance and value of effective aviation safety management that acknowledges at all times that safety is paramount;",
-    },
-    {
-      id: 3,
-      text: "Invest in employee development by ensuring that all our employees are equipped with all the necessary knowledge and skills they require to effectively carry out their duties and responsibilities",
+      text: "We are committed to developing a safety culture in all our aviation activities that recognizes the importance and value of effective aviation safety management and acknowledges that safety is paramount. We also aim to make a positive contribution to the broader Africa and minimize our impact on the environment.",
     },
   ],
 };
@@ -142,15 +144,15 @@ export const goals = {
   list: [
     {
       id: 1,
-      text: "To be ISSA certified by end of 2024",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad laboriosam, cum voluptates quas commodi at modi vel, exercitationem doloribus reprehenderit amet saepe ipsa ducimus autem, ab aperiam sed totam!",
     },
     {
       id: 2,
-      text: "To be BARs certified by end of 2025",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis praesentium vitae veniam assumenda doloremque, libero natus officiis unde mollitia?",
     },
     {
       id: 3,
-      text: "To offer our services to major oil & gas/ humanitarian clients by 2024",
+      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat rerum aliquid doloribus iure itaque! Labore ipsam earum animi et cum.",
     },
   ],
 };
@@ -161,25 +163,13 @@ export const services_data = {
       id: 1,
       icon: "FlightTakeoffOutlinedIcon",
       title: "CHARTER FLIGHTS",
-      text: "Experience the pinnacle of aviation excellence: Embark on a transformative journey as we offer our esteemed clients exclusive charter services.",
+      text: "We provide our clients with the option of chartering our aircrafts for passenger and/or cargo services.",
     },
     {
       id: 2,
       icon: "Diversity3OutlinedIcon",
-      title: "ACMI SOLUTIONS",
-      text: "ACMI solutions involve providing complete aircraft services, including the aircraft itself, trained crew, maintenance, and insurance.  ",
-    },
-    {
-      id: 3,
-      icon: "CalendarMonthOutlinedIcon",
-      title: "ADHOC FLIGHTS",
-      text: "These are flights that are arranged on a case-by-case basis, without a fixed schedule. They are typically organized in response to specific requests or unforeseen circumstances.  ",
-    },
-    {
-      id: 4,
-      icon: "AirlinesIcon",
-      title: "SPECIALIZED OPERATIONS",
-      text: "Dragonfly Aviation engages in specialized operations which could include missions such as emergency evacuations",
+      title: "HUMANITARIAN & RELIEF SERVICES",
+      text: "Fajr Airlines offers humanitarian services to save the lives of millions of people caught up in humanitarian disasters. We ensure quick and safe access to affected areas. We also provide air services to transport humanitarian personnel and supplies, as well as to perform medical and security evacuations as required.",
     },
   ],
 };
@@ -196,43 +186,67 @@ export const fleet = {
       NumberOfaircrafts: 2,
       passagers: 50,
     },
-    {
-      id: 2,
-      type: "Fokker 28 Mk 70",
-      text: "The Fokker 70 is a narrow-body, twin-engined, medium- range, turbofan regional airliner designed and produced by the Dutch aircraft manufacturer Fokker. The aircraft is designed for short and medium range operations. F70 Maximum Take-off Mass (MTOM) 37.995kg Maximum operating pressure altitude is 35.000 feet Maximum take-off and landing pressure altitude is 8.000 feet.",
-      Pilots: 2,
-      cabin: 3,
-      engineer: 1,
-      NumberOfaircrafts: 1,
-      passagers: 80,
-    },
   ],
 };
+export const aircrafts = [
+  {
+    name: "Fokker 50 Series",
+    images: [
+      "/passenger plane.jpg",
+      "/airplane-sky.jpg",
+      // add more pics here
+    ],
+    description:
+      "The F-50 is powered by two Pratt & Whitney PW 125B turboprop engines. The propellers are six bladed with full feathering and reverse capabilities. The aircraft is pressurized which permits it to fly up to 25,000 feet.",
+    crewComposition: [
+      { role: "Pilots", quantity: 2 },
+      { role: "Cabin Crew", quantity: 2 },
+      { role: "Engineer", quantity: 1 },
+      { role: "Passengers", quantity: 50 },
+    ],
+  },
+  {
+    name: "Lorem, ipsum dolor.",
+    images: [
+      "/passenger plane.jpg",
+      "/airplane-sky.jpg",
+      // add more as needed
+    ],
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet velit veritatis, eos animi rem sint fuga quibusdam nobis magni a odio accusantium voluptatibus. Praesentium quod dolor doloremque voluptatibus labore harum.",
+    crewComposition: [
+      { role: "Pilots", quantity: 2 },
+      { role: "Cabin Crew", quantity: 2 },
+      { role: "Engineer", quantity: 1 },
+      { role: "Passengers", quantity: 76 },
+    ],
+  },
+];
 
 export const memberships = {
   list: [
-    {
-      id: 1,
-      acronym: "KATA",
-      names: "Kenya Association of Travel Agents",
-      web_url: "https://katakenya.org/",
-      logo_url: kata,
-    },
-    {
-      id: 2,
-      acronym: "KAAO",
-      names: "Kenya Association of Air Operators",
-      web_url: "https://aviationkenya.org/",
-      logo_url: kaoo,
-    },
+    // {
+    //   id: 1,
+    //   acronym: "KATA",
+    //   names: "Kenya Association of Travel Agents",
+    //   web_url: "https://katakenya.org/",
+    //   logo_url: kata,
+    // },
+    // {
+    //   id: 2,
+    //   acronym: "KAAO",
+    //   names: "Kenya Association of Air Operators",
+    //   web_url: "https://aviationkenya.org/",
+    //   logo_url: kaoo,
+    // },
   ],
 };
 
 export const management_text = {
   paragraphs: [
     {
-      p1: "We have a highly experienced management team with the experties and industry knowledge to deliver our services to diverse clients. Our employees are the heart of our company, and we value their ongoing commitment and dedication to our continued success.",
-      p2: "As per KCAA AOC and Admin regulations we have a team of 6 Nominated post holders all that have been accepted by the authority after a vigorous interview process. The 6 are the Accountable Manager, Head of Quality, Head of Operations, Chief Pilot, Head of Safety and the Head of Maintenance. Other managers are Cabin Crew Manager, Security Manager and Operations Manager.",
+      p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nihil assumenda provident blanditiis iusto ipsam totam velit maiores quo voluptatem, porro accusantium vel, laudantium consequuntur officia excepturi molestias labore iste.",
+      p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse fugit error, obcaecati placeat atque est expedita sunt? Ratione aspernatur minus veniam eum explicabo incidunt vero pariatur officia vel, rerum, eligendi delectus possimus? Quos, repudiandae.",
     },
   ],
 };
@@ -242,230 +256,177 @@ export const team = {
     {
       id: 1,
       title: "Accountable Manager",
-      name: "Winnie Nafula",
-      image_url: WinnieN,
+      name: "Accountable manager",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Winnie is a seasoned leader in the aviation industry with over 17 years progressive experience in various leading airlines. She has a high understanding of National Civil Aviation regulations as well as international protocols. Winnie has numerous certifications related to aviation. She is also an Instructor approved to instruct various aviation courses among them SEPT, CRM,AVSEC and DGR.",
-        },
-        {
-          pi: 2,
-          text: "She is currently pursuing a Masters in Sustainable Air Transport Management, Winnie holds a Bachelor’s degree in Communication and a Professional Training Diploma. With her vast aviation experience, high professional track record, industry passion and qualifications, she comes with a wealth of experience for her role.",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum, sequi facere non qui pariatur consectetur modi harum minima quos voluptas asperiores ullam rerum suscipit, inventore fuga, illum sapiente consequuntur.",
         },
       ],
     },
     {
       id: 2,
       title: "Head of Quality",
-      name: "Joseph Fundi",
-      image_url: Fundi,
+      name: "John Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Joseph started his career as a quality inspector/auditor and has risen through the ranks to his current position as Head of Quality. He has a keen interest in Aviation Management Systems for flight operations and aircraft maintenance, with 14 years’ experience .",
-        },
-        {
-          pi: 2,
-          text: "More specifically, he has nine years experience in maintenance and five years experience in flight operations, giving him broad experience and the expertise for the role. He holds a BSc. Mechanical Engineering and a flight operations dispatch certificate. Joseph is also a Human Factors Instructor.",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid provident iste aspernatur necessitatibus corrupti labore? Porro pariatur eum qui architecto.",
         },
       ],
     },
     {
       id: 3,
       title: "Head of Safety",
-      name: "Winfred Hope Mwamburi",
-      image_url: Winfred,
+      name: "Jane Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Joseph started his career as a quality inspector/auditor and has risen through the ranks to his current position as Head of Quality. He has a keen interest in Aviation Management Systems for flight operations and aircraft maintenance, with 14 years’ experience .",
-        },
-        {
-          pi: 2,
-          text: "More specifically, he has nine years experience in maintenance and five years experience in flight operations, giving him broad experience and the expertise for the role. He holds a BSc. Mechanical Engineering and a flight operations dispatch certificate. Joseph is also a Human Factors Instructor.",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure fugiat voluptatibus molestiae minima ut dolorum, veritatis aliquid eveniet vitae!",
         },
       ],
     },
     {
       id: 4,
       title: "Head of Operations",
-      name: "Captain Gulraiz Sayed",
-      image_url: Gulraiz,
+      name: "John Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "JCaptain Gulraiz is a seasoned aviator who has a wealth of knowledge and expertise in aviation. With 49 years’ experience in the industry, he has served as an Aviation Technician, a Captain and an Aviation business owner.",
-        },
-        {
-          pi: 2,
-          text: "He has held an airline transport pilots license with various aircraft ratings ranging from the Beechcraft, King Air and the Dash 8. With his diverse expertise, he heads the operations department with rich experience and professionalism.",
+          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus ab eligendi, ex praesentium maxime placeat ducimus hic, adipisci, quo esse necessitatibus fugiat nam libero.",
         },
       ],
     },
     {
       id: 5,
       title: "Chief Pilot",
-      name: "Captain Mahat Omar Somo",
-      image_url: Mahat,
+      name: "John Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Mahat Somo has over 11 years’ experience in the aviation industry as a line pilot, a Commercial Director and Head of Operations.",
-        },
-        {
-          pi: 2,
-          text: "He is also instrument rating examiner as well as a Designated Check Pilot with the Kenya civil aviation authority. His experience in leadership, training and management make him an excellent fit as a chief pilot.",
-        },
-        {
-          pi: 3,
-          text: "He holds a KCAA airline transport license, with aircraft type rating endorsements for Cessna c172, Fokker 50 and Dash 8.",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sed similique, repellat dolor animi nulla quis eius deleniti unde quibusdam.",
         },
       ],
     },
     {
       id: 7,
       title: "Human Resource Manager",
-      name: "Hamdi Ibrahim",
-      image_url: Hamdi,
+      name: "Jane Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Hamdi has a passion for the Human Resource profession with a bachelor’s degree in Law and a master’s in international human rights law.",
-        },
-        {
-          pi: 2,
-          text: "Though she has a legal background, she suits perfectly in her role as the Human Resource Manager where she enjoys working in cross cultural and high-pressure environments.",
-        },
-        {
-          pi: 3,
-          text: "She is excellent in public speaking, effective communication, and impact assessment.",
+          text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat ea velit delectus molestias dolores, cumque neque illum assumenda cupiditate dolorum sunt incidunt repellat atque.",
         },
       ],
     },
     {
       id: 8,
       title: "Security Manager",
-      name: "Samuel Kiprono Langat",
-      image_url: Samuel,
+      name: "John Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Samuel is a seasoned security professional with experience that spans 35 years. He has held various security positions in diverse industries having worked in the SME sector, as a police officer and investigator.",
-        },
-        {
-          pi: 2,
-          text: "A highlight in Samuel’s career is joining the Kenya Airports Authority in 1997 as a security warden and rising through the ranks to become a senior security officer in charge of quality control. He has been instrumental in providing technical assistance in the developing of operational manuals to all the active airports in Kenya. His expertise saw him play a role in the achieving of the Kenya-USA category one status in 2016. Mr. Langat holds a diploma in public relations from Moi university.",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, itaque a alias, ratione animi est voluptatum atque fugiat perspiciatis cumque eaque architecto, obcaecati quas quisquam.",
         },
       ],
     },
     {
       id: 9,
       title: "Operations Manager",
-      name: "Margaret Mage",
-      image_url: Margaret,
+      name: "Jane Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Margaret is a KCAA licensed Flight Dispatcher with vast experience in the aviation industry. She is also a qualified FOO instructor. Margaret is trained in Safety Management Systems and Quality Management Systems. With her training, experience and expertise, she is a great fit as our operation Manager.",
+          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eos quasi dolor praesentium sit, consequuntur id optio earum! Amet adipisci, reprehenderit veritatis nemo officiis ipsum.",
         },
       ],
     },
     {
       id: 10,
       title: "Cabin Crew Manager and Training Coordinator",
-      name: "Dennis Kyalo",
-      image_url: Dannie,
+      name: "John Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Dennis is the Cabin Crew Manager and Training Coordinator at Dragonfly aviation limited. He is also an instructor for safety and emergency procedures and crew resource management. Dennis is a KCAA Certified Cabin Crew Member.",
-        },
-        {
-          pi: 2,
-          text: "He Joined the Aviation industry over Eight years ago as a cabin crew and has risen through the ranks. He is passionate about safety and excellent customer service and delights in training and helping both new and experienced crew to offer unparalleled service to passengers.",
+          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam reprehenderit ipsam perspiciatis cum sunt inventore non ex, ad debitis tempora sit repellat porro illo sed?",
         },
       ],
     },
     {
       id: 12,
       title: "Reservations Manager",
-      name: "Mulki Adan",
-      image_url: Mulki,
+      name: "Jane Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Mulki Adan is a well trained optimistic and enthusiastic customer relations professional with over five years experience in various aviation companies.",
-        },
-        {
-          pi: 2,
-          text: "She is skilled at developing and nurturing positive relationships with customers by providing an excellent customer experience for each client.",
-        },
-        {
-          pi: 2,
-          text: "Throughout her career she has earned the trust of several loyal customers and stakeholders who she has maintained strong relationships with.",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et assumenda aliquam asperiores deleniti qui eveniet distinctio fugit ipsam. Alias suscipit fugiat in enim cum?",
         },
       ],
     },
     {
       id: 13,
       title: "Finance Manager",
-      name: "Yasmin Sinina",
-      image_url: yasmin,
+      name: "Jane Doe",
+      image_url: User,
       paragraphs: [
         {
           pi: 1,
-          text: "Yasmin holds a Bachelors Degree in Business Management specializing in Finance and Banking. She has financial experience from various local and international firms.",
-        },
-        {
-          pi: 2,
-          text: "Yasmin has worked for Samsung a telecommunication firm She also has experience in the insurance sector. Yasmin has solid expertise and experience necessary for her current role.",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis, error suscipit delectus beatae quaerat? Eos ex et voluptate error non perspiciatis, vero laboriosam ad.",
         },
       ],
     },
-    // {
-    //   id: 14,
-    //   title: "IT Manager",
-    //   name: "Antony Wachira",
-    //   image_url: Antony,
-    //   paragraphs: [
-    //     {
-    //       pi: 1,
-    //       text: "Anthony has a wealth of experience in Network design and installation, Windows server installation, configuration, implementation, and user support. He has also been involved in deployment of web applications, user training in computer use and repair.",
-    //     },
-    //     {
-    //       pi: 2,
-    //       text: "He is all rounded in setting up, configuring deploying and maintaining networks with an array of computing accessories i.e., printers, IP phones, CCTV, routers and switches. Anthony holds a Diploma in Computer Science from Kenyatta University.",
-    //     },
-    //     {
-    //       pi: 3,
-    //       text: "He is certified in windows server administration, computer repair and maintenance and is currently undergoing studies in Web Applications and coding with Python.",
-    //     },
-    //   ],
-    // },
+    {
+      id: 14,
+      title: "IT Manager",
+      name: "Lorem, ipsum.",
+      image_url: User,
+      paragraphs: [
+        {
+          pi: 1,
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis vel reiciendis nobis commodi corrupti alias eveniet consequatur. Ullam voluptate at incidunt perspiciatis dicta cupiditate?",
+        },
+      ],
+    },
   ],
 };
 
 export const heroCarousel_data = [
   {
     id: 1,
-    hero_url: DRG_CREW,
+    hero_url: hero1,
     page_link: "/about",
-    long_title:
-      "Premium Charter Aircraft Services for Cargo and Passenger Transportation",
-    short_title: "Premium Charter for Passengers",
+    long_title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    short_title: "Lorem ipsum dolor sit amet.",
     hero_phrase:
-      "Elevate your passenger transportation needs with our reliable aircraft charter services.",
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum exercitationem placeat rerum harum perferendis velit..",
   },
   {
     id: 2,
-    hero_url: DRG,
+    hero_url: hero2,
     page_link: "/about",
-    long_title:
-      "Transform Lives with Efficient and Trusted Humanitarian Air Services",
-    short_title: "Transform Lives with Air Services",
+    long_title: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    short_title: "Lorem ipsum dolor sit amet.",
     hero_phrase:
-      "Be the change in the world and help save lives with our trusted and efficient humanitarian air services.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam incidunt, nihil doloremque quos eaque eum tempore repellendus aspernatur iure alias?",
+  },
+  {
+    id: 2,
+    hero_url: hero3,
+    page_link: "/about",
+    long_title: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    short_title: "Lorem ipsum dolor sit amet.",
+    hero_phrase:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam incidunt, nihil doloremque quos eaque eum tempore repellendus aspernatur iure alias?",
   },
 ];
 

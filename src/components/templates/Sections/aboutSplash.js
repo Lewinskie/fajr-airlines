@@ -46,7 +46,7 @@ function AboutSplash({ teamlist, about_us }) {
           style={{ marginTop: "4rem", display: "flex", alignItems: "center" }}
         >
           <div
-            className=" h-1 w-10 rounded bg-red-500"
+            className=" h-1 w-10 rounded bg-secondary-500"
             style={{ marginRight: "1rem" }}
           ></div>
           <h4 className=" uppercase text-2xl font-bold">Who are we?</h4>
@@ -104,7 +104,7 @@ function AboutSplash({ teamlist, about_us }) {
       <Container>
         <div className="my-10">
           <div className="my-20 flex flex-row items-center justify-start  gap-4 ">
-            <div className=" h-1 w-10 rounded bg-red-500"></div>
+            <div className=" h-1 w-10 rounded bg-secondary-500"></div>
             <h4 className=" uppercase text-2xl font-bold">Meet Out Team</h4>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">

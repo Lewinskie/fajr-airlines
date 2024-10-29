@@ -58,31 +58,53 @@ module.exports = {
         serif: ["var(--font-serif)", ...defaultTheme.fontFamily.serif],
       },
       colors: {
-        // Primary color: #000345
+        // Primary color: #051D40
         primary: {
-          50: "#E6E8F8",
-          100: "#C2C6EC",
-          200: "#999FDB",
-          300: "#707CB9",
-          400: "#4D5A97",
-          500: "#000345",
-          600: "#00022E",
-          700: "#000218",
-          800: "#000102",
-          900: "#000000",
+          // 50: "#E6E8F8",
+          // 100: "#C2C6EC",
+          // 200: "#999FDB",
+          // 300: "#707CB9",
+          // 400: "#4D5A97",
+          // 500: "#000345",
+          // 600: "#00022E",
+          // 700: "#000218",
+          // 800: "#000102",
+          // 900: "#000000",
+
+          50: "#E2E9F5", // Lighter shade
+          100: "#B7CBE4", // Lighter shade
+          200: "#8DA2B7", // Lighter shade
+          300: "#6A7D99", // Lighter shade
+          400: "#4E6179", // Darker shade
+          500: "#051D40", // Base color
+          600: "#041D36", // Darker shade
+          700: "#031D2D", // Darker shade
+          800: "#021C23", // Darker shade
+          900: "#011B1A", // Darker shade
         },
         // Secondary color: #D41B20
         secondary: {
-          50: "#FFE9E9",
-          100: "#FFCFCF",
-          200: "#FFA6A6",
-          300: "#FF7D7D",
-          400: "#FF5656",
-          500: "#D41B20",
-          600: "#AD191D",
-          700: "#871518",
-          800: "#600F12",
-          900: "#3A090D",
+          // 50: "#FFE9E9",
+          // 100: "#FFCFCF",
+          // 200: "#FFA6A6",
+          // 300: "#FF7D7D",
+          // 400: "#FF5656",
+          // 500: "#D41B20",
+          // 600: "#AD191D",
+          // 700: "#871518",
+          // 800: "#600F12",
+          // 900: "#3A090D",
+
+          50: "#FFE3B8", // Very light orange
+          100: "#FFD59E", // Light orange
+          200: "#FFBF7F", // Soft orange
+          300: "#FFA64D", // Medium orange
+          400: "#FF9A1A", // Bright orange
+          500: "#FFA500", // Base color
+          600: "#CC8400", // Darker orange
+          700: "#995D00", // Darker shade
+          800: "#663D00", // Darker shade
+          900: "#331E00", // Very dark orange
         },
         // Accent color: #27305a
         accent: {

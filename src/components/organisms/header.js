@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
-// import { NavTitles } from "../../frontend-data";
 import NavLinkList from "../molecules/navLinkList";
 import SideNavLinkList from "../molecules/sideNavLinkList";
 import { OpenedMenu } from "../icons";
 import { ClosedMenu } from "../icons";
-import { BookingIcon } from "../icons";
-// import PromoHeader from "../molecules/promoHeader";
 import Logo from "../atoms/brand";
 import { Button } from "../cva/buttonCVA";
 

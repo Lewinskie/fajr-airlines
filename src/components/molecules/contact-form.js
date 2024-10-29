@@ -65,7 +65,7 @@ const ContactForm = () => {
                   name="firstName"
                   className={`appearance-none bg-transparent border  ${
                     touched.firstName && errors.firstName
-                      ? "border-red-500"
+                      ? "border-secondary-500"
                       : "border-primary-500"
                   } w-full text-gray-600 capitalize py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="text"
@@ -83,7 +83,7 @@ const ContactForm = () => {
                   name="lastName"
                   className={`appearance-none bg-transparent border ${
                     touched.lastName && errors.lastName
-                      ? "border-red-500"
+                      ? "border-secondary-500"
                       : "border-primary-500"
                   } w-full text-gray-600 capitalize py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="text"
@@ -103,7 +103,7 @@ const ContactForm = () => {
                   name="email"
                   className={`appearance-none bg-transparent border ${
                     touched.email && errors.email
-                      ? "border-red-500"
+                      ? "border-secondary-500"
                       : "border-primary-500"
                   } w-full text-gray-600 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="email"
@@ -121,7 +121,7 @@ const ContactForm = () => {
                   name="phoneNumber"
                   className={`appearance-none bg-transparent border ${
                     touched.phoneNumber && errors.phoneNumber
-                      ? "border-red-500"
+                      ? "border-secondary-500"
                       : "border-primary-500"
                   } w-full text-gray-600 capitalize py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                   type="text"
@@ -140,7 +140,7 @@ const ContactForm = () => {
                 name="subject"
                 className={`appearance-none bg-transparent border ${
                   touched.subject && errors.subject
-                    ? "border-red-500"
+                    ? "border-secondary-500"
                     : "border-primary-500"
                 } w-full text-gray-600 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                 type="text"
@@ -160,7 +160,7 @@ const ContactForm = () => {
                 rows="4"
                 className={`appearance-none bg-transparent border ${
                   touched.message && errors.message
-                    ? "border-red-500"
+                    ? "border-secondary-500"
                     : "border-primary-500"
                 } w-full text-gray-600 py-1 px-2 focus:outline-none leading-relaxed text-base font-serif`}
                 type="text"
