@@ -8,18 +8,18 @@ function Fleets({}) {
     <>
       <div className="relative h-[40vw] md:h-[24vw]">
         <Image
-          src="DSC_4885-Pano copy.jpg"
+          src="tail.png"
           alt="alt text"
           fill
           object-fit="cover"
-          object-position="center"
+          object-position="left 0% top 90%"
           className=" brightness-50 object-cover"
         />
         <div
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(to top, rgba(0,3,69,0.8) 0%, rgba(0,3,69,0.4) 100%)",
+              "linear-gradient(to top, rgba(0,3,69,0.1) 0%, rgba(0,3,69,0.2) 40%)",
           }}
         ></div>
         <Container>
