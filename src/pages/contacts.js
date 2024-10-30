@@ -1,30 +1,40 @@
 import { Container, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import ContactImage from "../../public/hero3.webp";
+import ContactImage from "../../public/tail.png";
 import Maps from "@/components/molecules/maps";
 import ContactForm from "@/components/molecules/contact-form";
 
 const Contacts = () => {
   return (
     <>
-      {/* <div className="relative h-[80vw] md:h-[34vw]">
-        <Image
-          src={ContactImage}
-          alt="alt text"
-          fill
-          object-fit="cover"
-          className="-z-10 brightness-50 object-none"
-        />
-        <div className="absolute inset-0 bg-primary-600 opacity-40 "></div>
+      {/* Hero Section */}
+      <div className="relative h-[40vw] md:h-[24vw]">
+        <div className="relative h-full overflow-hidden">
+          <Image
+            src={ContactImage}
+            alt="About Us"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="left 0% top 90%"
+            className="-z-10 brightness-50"
+          />
+        </div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top, rgba(0,3,69,0.1) 0%, rgba(0,3,69,0.2) 40%)",
+          }}
+        ></div>
         <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
           <Container>
             <div className="max-w-7xl mx-auto">
-              <h1 className="text-3xl text-neutral-500">Contact us</h1>
+              <h1 className="text-3xl text-white font-bold">Contact Us</h1>
             </div>
           </Container>
         </div>
-      </div> */}
+      </div>
       <Maps />
       <div>
         <Container>

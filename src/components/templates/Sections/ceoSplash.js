@@ -1,38 +1,36 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
-import AboutImage from "../../../../public/FAH_1364 copy.webp";
+import AboutImage from "../../../../public/tail.png";
 import { Container } from "@mui/material";
 
 function CeoSplash({ message }) {
   const { ceo_message } = message;
   return (
     <>
+      {/* Hero Section */}
       <div className="relative h-[40vw] md:h-[24vw]">
-        <div
-          style={{ position: "relative", height: "100%", overflow: "hidden" }}
-        >
+        <div className="relative h-full overflow-hidden">
           <Image
             src={AboutImage}
-            alt="alt text"
+            alt="About Us"
             layout="fill"
             objectFit="cover"
-            objectPosition="center 25%"
-            className="-z-10 brightness-50 object-cover"
+            objectPosition="left 0% top 90%"
+            className="-z-10 brightness-50"
           />
         </div>
-        
         <div
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(to top, rgba(0,3,69,0.9) 0%, rgba(0,3,69,0.2) 100%)",
+              "linear-gradient(to top, rgba(0,3,69,0.1) 0%, rgba(0,3,69,0.2) 40%)",
           }}
         ></div>
         <div className="absolute bottom-0 left-0 mb-8 pl-8 w-full">
           <Container>
             <div className="max-w-7xl mx-auto">
-              <h1 className="text-3xl text-neutral-500">CEO's Message</h1>
+              <h1 className="text-3xl text-white font-bold">CEO's Message</h1>
             </div>
           </Container>
         </div>
