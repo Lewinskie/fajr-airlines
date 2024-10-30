@@ -101,34 +101,51 @@ function AboutSplash({ teamlist, about_us }) {
             </h4>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {team.map((member) => (
-              <div
-                key={member.id}
-                className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                {/* Team Member Image */}
+            {team.map((member) => {
+              // Extract the first name
+              const firstName = member.name.split(" ")[0];
+
+              return (
                 <div
-                  className="relative w-24 h-24 mb-4 p-2 border-2 border-[#FFD700] overflow-hidden"
-                  style={{
-                    borderRadius: "50%",
-                  }}
+                  key={member.id}
+                  className="relative bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
                 >
-                  <Image
-                    src={member.image_url}
-                    alt={member.name}
-                    width={96}
-                    height={96}
-                    objectFit="cover"
-                  />
+                  {/* Team Member Image */}
+                  <div
+                    className="relative w-24 h-24 p-2 mb-4 border-2 border-[#FFD700] overflow-hidden"
+                    style={{
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <Image
+                      src={member.image_url}
+                      alt={member.name}
+                      width={96}
+                      height={96}
+                      objectFit="cover"
+                    />
+                  </div>
+                  <h2 className="font-bold font-sans text-lg text-[#051D40]">
+                    {member.name}
+                  </h2>
+                  <p className="leading-relaxed text-sm text-[#4E6179] font-serif">
+                    {member.title}
+                  </p>
+
+                  {/* Hidden Brief Section */}
+                  <div className="absolute inset-0 bg-white bg-opacity-95 flex flex-col items-center justify-center text-center p-4 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-lg text-[#4E6179] font-serif">
+                      {`${firstName}'s summary`}
+                    </p>
+                    {/* <div className="border-b border-primary-100 mb-3 mt-1 w-full"></div> */}
+
+                    <p className="text-[#4E6179] text-sm font-serif">
+                      {member.paragraphs[0]?.text}
+                    </p>
+                  </div>
                 </div>
-                <h2 className="font-bold font-sans text-lg text-[#051D40]">
-                  {member.name}
-                </h2>
-                <p className="leading-relaxed text-sm text-[#4E6179] font-serif">
-                  {member.title}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </Container>
