@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
   return (
     <div className={`${displayHeader.variable} ${displayBody.variable}`}>
       <Head>
-        <title>DragonFly Aviation </title>
+        <title>Fajr Airlines </title>
         <meta name="description" content="Content" />
       </Head>
       <Header />

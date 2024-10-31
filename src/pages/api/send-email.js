@@ -3,22 +3,21 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
-      const { firstName, lastName, email, phoneNumber, subject, message } =
-        req.body;
+      const { name, email, phoneNumber, subject, message } = req.body;
 
       const transporter = nodemailer.createTransport({
         service: "Gmail",
         auth: {
-          user: "info@dragonflyafrica.co.ke",
+          user: "info@fajrairlines.com",
           pass: "rwldoqjgpeutlxba",
         },
       });
 
       const mailOptions = {
         from: email,
-        to: "info@dragonflyafrica.co.ke",
+        to: "info@fajrairlines.com",
         subject,
-        text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phoneNumber}\nMessage: ${message}`,
+        text: `Name: ${name} \nEmail: ${email}\nPhone: ${phoneNumber}\nMessage: ${message}`,
       };
 
       await transporter.sendMail(mailOptions);
