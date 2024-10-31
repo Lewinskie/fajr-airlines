@@ -74,7 +74,7 @@ function AboutSplash({ teamlist, about_us }) {
               <p className="leading-relaxed text-base font-serif text-[#4E6179]">
                 To become the most efficient and dependable air service provider
                 in the region and beyond while contributing significantly to the
-                country's economic growth and infrastructure development.
+                country&apos;s economic growth and infrastructure development.
               </p>
             </div>
             <div>
@@ -134,7 +134,7 @@ function AboutSplash({ teamlist, about_us }) {
 
                   {/* Hidden Brief Section */}
                   <div className="absolute inset-0 bg-white bg-opacity-95 flex flex-col items-center justify-center text-center p-4 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-lg text-[#4E6179] font-serif">
+                    <p className="text-lg text-[#4E6179] font-serif">
                       {`${firstName}'s summary`}
                     </p>
                     {/* <div className="border-b border-primary-100 mb-3 mt-1 w-full"></div> */}
