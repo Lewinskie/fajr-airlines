@@ -5,7 +5,7 @@ import { Container, Grid } from "@mui/material";
 
 function Footer() {
   return (
-    <div className=" bg-secondary-500 pt-4 pb-2">
+    <div className=" bg-primary-500 pt-4 pb-2">
       <footer className="text-base font-sans tracking-wide text-white pb-10">
         <Container>
           <Grid container spacing={3}>
@@ -37,7 +37,7 @@ function Footer() {
                 textAlign: { xs: "center", sm: "start" },
               }}
             >
-              <h3 className="py-5 text-base text-white uppercase underline decoration-red-500  underline-offset-8">
+              <h3 className="py-5 text-base text-white uppercase underline decoration-secondary-500  underline-offset-8">
                 Navigation
               </h3>
               <ul className="flex flex-col font-serif">
@@ -58,7 +58,7 @@ function Footer() {
                 textAlign: { xs: "center", sm: "start" },
               }}
             >
-              <h3 className="py-5 text-white text-base uppercase  underline decoration-red-500  underline-offset-8">
+              <h3 className="py-5 text-white text-base uppercase  underline decoration-secondary-500  underline-offset-8">
                 Contacts
               </h3>
               <ul className="p-1 font-serif text-sm">
