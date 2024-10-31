@@ -1,38 +1,43 @@
 import Image from "next/image";
-import { Button } from "../../cva/buttonCVA";
 
 function Destinations({ destinations }) {
   return (
-    <div className=" bg-primary-50 py-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 px-10 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="bg-primary-50 py-20">
+      <div className="max-w-7xl mx-auto px-10 text-center">
+        <h2 className="text-3xl font-bold mb-4">Explore Our Destinations</h2>
+        <p className="text-lg text-gray-700 mb-10">
+          Discover breathtaking destinations that offer unique experiences and unforgettable memories. 
+          Whether you seek adventure, relaxation, or cultural immersion, our carefully curated destinations have something for everyone.
+        </p>
+      </div>
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {destinations.map((destination) => (
           <div
             key={destination.id}
-            className="bg-white rounded-lg shadow-2xl-primary"
+            className="relative group bg-white rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl"
           >
             <div className="relative h-48 overflow-hidden rounded-t-lg">
               <Image
                 src={destination.imageSrc}
                 alt={destination.name}
-                width={1200}
-                height={500}
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-300 group-hover:scale-110"
               />
             </div>
             <div className="p-6">
-              <h2 className="text-lg font-bold font-sans  mb-4">
+              <h2 className="text-lg font-bold font-sans mb-4">
                 {destination.name}
               </h2>
-              <p className="leading-relaxed text-base font-serif h-28">
+            </div>
+            <div className="absolute inset-0 bg-white rounded-lg p-4 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <p className="leading-relaxed text-base font-serif">
                 {destination.description}
               </p>
-              {/* <Button
-                href="#"
-                intent="primary"
-                size="medium"
-                className="inline-block mt-4 px-4 py-2  text-white rounded-lg"
-              >
+              {/* <button className="mt-4 px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600">
                 Learn more
-              </Button> */}
+              </button> */}
             </div>
           </div>
         ))}

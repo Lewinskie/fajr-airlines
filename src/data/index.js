@@ -1,13 +1,6 @@
 import hero1 from "../../public/crew1.png";
 import hero2 from "../../public/crew2.png";
 import hero3 from "../../public/airplane-sky.jpg";
-import DRG from "../../public/DSC_4920-Pano copy.jpg";
-import DRG_CREW from "../../public/crew1.png";
-import Nairobi from "../../public/nairobi.jpg";
-import Mogadishu from "../../public//mogadishu.jpg";
-
-import kaoo from "../../public/kaoo.jpg";
-import kata from "../../public/kata.png";
 
 // Team
 import User from "../../public/user-placeholder.png";
@@ -225,20 +218,31 @@ export const aircrafts = [
 
 export const memberships = {
   list: [
-    // {
-    //   id: 1,
-    //   acronym: "KATA",
-    //   names: "Kenya Association of Travel Agents",
-    //   web_url: "https://katakenya.org/",
-    //   logo_url: kata,
-    // },
-    // {
-    //   id: 2,
-    //   acronym: "KAAO",
-    //   names: "Kenya Association of Air Operators",
-    //   web_url: "https://aviationkenya.org/",
-    //   logo_url: kaoo,
-    // },
+    {
+      id: 1,
+      acronym: "KATA",
+      names: "Kenya Association of Travel Agents",
+      web_url:
+        " https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      logo_url:
+        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+    },
+    {
+      id: 2,
+      acronym: "KAAO",
+      names: "Kenya Association of Air Operators",
+      web_url: "https://aviationkenya.org/",
+      logo_url:
+        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+    },
+    {
+      id: 3,
+      acronym: "lorem",
+      names: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, fuga!",
+      web_url: "https://aviationkenya.org/",
+      logo_url:
+        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+    },
   ],
 };
 
@@ -433,16 +437,26 @@ export const heroCarousel_data = [
 export const destinations = [
   {
     id: 1,
-    name: "Nairobi",
-    imageSrc: Nairobi,
+    name: "Lorem, ipsum.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
     description:
-      "Nairobi, the vibrant hub of East Africa. Discover a city like no other and create memories that last a lifetime.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptate aliquam tenetur quas repudiandae vel provident explicabo iusto enim, iure id laboriosam excepturi inventore velit eaque dolorum veniam, earum rerum debitis atque illo quasi quibusdam..",
   },
   {
     id: 2,
-    name: "Mogadishu",
-    imageSrc: Mogadishu,
+    name: "Lorem, ipsum dolor.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
     description:
-      "Mogadishu, where the ocean meets the desert. Experience the magic of Somalia and its rich culture. Book your flight today.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo impedit quibusdam illo possimus incidunt amet autem modi qui explicabo aspernatur illum ratione blanditiis atque molestiae labore consectetur minus, nemo vero rem voluptatem quis!",
+  },
+  {
+    id: 3,
+    name: "Lorem, ipsum dolor.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo impedit quibusdam illo possimus incidunt amet autem modi qui explicabo aspernatur illum ratione blanditiis atque molestiae labore consectetur minus, nemo vero rem voluptatem quis!",
   },
 ];

@@ -13,28 +13,25 @@ function Footer() {
               item
               xs={12}
               sm={12}
-              md={6}
+              md={4}
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: { sm: "center", xs: "center" },
+                justifyContent: { sm: "center", xs: "center", md: "center" },
                 marginBottom: { sm: "2rem", xs: "2rem" },
                 marginTop: { sm: "2rem", xs: "2rem" },
                 paddingRight: "10px",
               }}
             >
-              <div>
+              <div className="flex justify-center align-middle">
                 <FooterLogo />
-                <p className="font-serif text-base text-white-400">
-                  Fajr airlines Limited
-                </p>
               </div>
             </Grid>
             <Grid
               item
               xs={12}
               sm={6}
-              md={2}
+              md={4}
               sx={{
                 justifyContent: { sm: "center", xs: "center" },
                 textAlign: { xs: "center", sm: "start" },
